@@ -56,7 +56,8 @@ export const tarotCards: TarotCard[] = [
     money: "풍요로운 물질적 상황, 안정적인 경제 상태, 자연스러운 부의 증가",
     career: "예술, 요리, 원예, 육아 관련 분야에서 성공, 창조적인 직업, 미용 관련 분야",
     advice: "당신의 창조력과 감성을 발휘할 때입니다. 자연과 아름다움을 추구하세요. 다른 사람을 보살피고 배려하는 마음을 가지세요.",
-    warning: "지나친 관대함으로 인한 손실을 주의하세요. 완벽주의에 빠져 스트레스받지 않도록 하세요."
+    warning: "지나친 관대함으로 인한 손실을 주의하세요. 완벽주의에 빠져 스트레스받지 않도록 하세요.",
+    imageUrl: "/images/tarot/the-empress.svg"
   },
   {
     id: 4,
@@ -69,7 +70,8 @@ export const tarotCards: TarotCard[] = [
     money: "체계적인 재정 관리, 안정적인 수입원, 장기적인 투자 계획",
     career: "경영, 정치, 법률 등 권위와 책임이 따르는 직업, 관리직, 공무원",
     advice: "질서와 규칙을 통해 안정을 추구하세요. 리더십을 발휘할 때입니다. 책임감을 가지고 계획적으로 행동하세요.",
-    warning: "지나친 권위주의나 고집을 부리지 않도록 주의하세요. 융통성도 필요합니다."
+    warning: "지나친 권위주의나 고집을 부리지 않도록 주의하세요. 융통성도 필요합니다.",
+    imageUrl: "/images/tarot/the-emperor.svg"
   },
   {
     id: 5,
@@ -238,7 +240,8 @@ export const tarotCards: TarotCard[] = [
     money: "재정적 회복, 꾸준한 수입, 희망적인 투자",
     career: "예술과 창작 분야, 치유와 상담 관련 직업",
     advice: "희망을 잃지 마세요. 꿈을 향해 꾸준히 나아가세요.",
-    warning: "너무 이상적으로만 생각하지 말고 현실적인 계획도 세우세요."
+    warning: "너무 이상적으로만 생각하지 말고 현실적인 계획도 세우세요.",
+    imageUrl: "/images/tarot/the-star.svg"
   },
   {
     id: 18,
@@ -251,7 +254,8 @@ export const tarotCards: TarotCard[] = [
     money: "재정적 불안, 불확실한 투자, 사기에 주의",
     career: "불분명한 상황, 직장에서의 불안과 혼란",
     advice: "직감을 믿되 현실을 정확히 파악하세요. 감정에 휩쓸리지 마세요.",
-    warning: "착각이나 환상에 빠지지 않도록 조심하세요."
+    warning: "착각이나 환상에 빠지지 않도록 조심하세요.",
+    imageUrl: "/images/tarot/the-moon.svg"
   },
   {
     id: 19,

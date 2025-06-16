@@ -1,0 +1,96 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="starGlow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.3" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Night Sky -->
+  <rect x="10" y="20" width="180" height="160" rx="10" fill="#1e1b4b" opacity="0.8"/>
+  
+  <!-- Large Central Star -->
+  <g transform="translate(100,60)">
+    <polygon points="0,-15 4,-4 15,-4 7,4 11,15 0,8 -11,15 -7,4 -15,-4 -4,-4" fill="url(#starGlow)"/>
+  </g>
+  
+  <!-- Seven smaller stars -->
+  <g transform="translate(60,40)">
+    <polygon points="0,-6 1.5,-1.5 6,-1.5 2.5,1.5 4,6 0,3 -4,6 -2.5,1.5 -6,-1.5 -1.5,-1.5" fill="#fbbf24"/>
+  </g>
+  <g transform="translate(140,45)">
+    <polygon points="0,-6 1.5,-1.5 6,-1.5 2.5,1.5 4,6 0,3 -4,6 -2.5,1.5 -6,-1.5 -1.5,-1.5" fill="#fbbf24"/>
+  </g>
+  <g transform="translate(70,80)">
+    <polygon points="0,-6 1.5,-1.5 6,-1.5 2.5,1.5 4,6 0,3 -4,6 -2.5,1.5 -6,-1.5 -1.5,-1.5" fill="#fbbf24"/>
+  </g>
+  <g transform="translate(130,75)">
+    <polygon points="0,-6 1.5,-1.5 6,-1.5 2.5,1.5 4,6 0,3 -4,6 -2.5,1.5 -6,-1.5 -1.5,-1.5" fill="#fbbf24"/>
+  </g>
+  <g transform="translate(50,100)">
+    <polygon points="0,-6 1.5,-1.5 6,-1.5 2.5,1.5 4,6 0,3 -4,6 -2.5,1.5 -6,-1.5 -1.5,-1.5" fill="#fbbf24"/>
+  </g>
+  <g transform="translate(150,95)">
+    <polygon points="0,-6 1.5,-1.5 6,-1.5 2.5,1.5 4,6 0,3 -4,6 -2.5,1.5 -6,-1.5 -1.5,-1.5" fill="#fbbf24"/>
+  </g>
+  <g transform="translate(90,110)">
+    <polygon points="0,-6 1.5,-1.5 6,-1.5 2.5,1.5 4,6 0,3 -4,6 -2.5,1.5 -6,-1.5 -1.5,-1.5" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Landscape -->
+  <polygon points="10,160 50,140 90,150 130,135 170,145 190,160 190,200 10,200" fill="#16a34a" opacity="0.6"/>
+  
+  <!-- Woman by the water -->
+  <g transform="translate(100,170)">
+    <!-- Head -->
+    <circle cx="0" cy="-10" r="8" fill="#fbbf24"/>
+    
+    <!-- Body -->
+    <rect x="-8" y="-5" width="16" height="25" rx="8" fill="#f3f4f6"/>
+    
+    <!-- Kneeling position -->
+    <ellipse cx="-5" cy="20" rx="4" ry="8" fill="#f3f4f6"/>
+    <ellipse cx="5" cy="25" rx="4" ry="6" fill="#f3f4f6"/>
+    
+    <!-- Arms pouring water -->
+    <rect x="-15" y="0" width="8" height="3" rx="1.5" fill="#fbbf24"/>
+    <rect x="7" y="5" width="8" height="3" rx="1.5" fill="#fbbf24"/>
+    
+    <!-- Water jugs -->
+    <ellipse cx="-15" cy="5" rx="3" ry="4" fill="#8b4513"/>
+    <ellipse cx="15" cy="10" rx="3" ry="4" fill="#8b4513"/>
+  </g>
+  
+  <!-- Water streams -->
+  <path d="M 85,175 Q 80,185 75,195 Q 70,205 65,215" stroke="#3b82f6" stroke-width="3" fill="none"/>
+  <path d="M 115,180 Q 120,190 125,200 Q 130,210 135,220" stroke="#3b82f6" stroke-width="3" fill="none"/>
+  
+  <!-- Pool of water -->
+  <ellipse cx="70" cy="220" rx="25" ry="8" fill="#1e40af" opacity="0.7"/>
+  
+  <!-- Land stream -->
+  <ellipse cx="130" cy="225" rx="20" ry="6" fill="#3b82f6" opacity="0.5"/>
+  
+  <!-- Ibis bird -->
+  <g transform="translate(160,180)">
+    <ellipse cx="0" cy="0" rx="6" ry="4" fill="#f3f4f6"/>
+    <ellipse cx="-8" cy="-2" rx="3" ry="2" fill="#f3f4f6"/>
+    <line x1="-11" y1="-2" x2="-15" y2="-4" stroke="#8b4513" stroke-width="2"/>
+    <line x1="0" y1="4" x2="0" y2="8" stroke="#8b4513" stroke-width="1"/>
+    <line x1="3" y1="4" x2="3" y2="8" stroke="#8b4513" stroke-width="1"/>
+  </g>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">THE STAR</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">별</text>
+  
+  <!-- Card Number -->
+  <text x="20" y="40" font-family="serif" font-size="18" fill="#fbbf24" font-weight="bold">XVII</text>
+</svg>
