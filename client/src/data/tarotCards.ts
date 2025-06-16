@@ -98,7 +98,8 @@ export const tarotCards: TarotCard[] = [
     money: "파트너십을 통한 이익, 공동 투자, 사랑하는 사람을 위한 지출",
     career: "팀워크, 협력을 통한 성공, 예술이나 상담 관련 분야",
     advice: "중요한 선택의 순간입니다. 마음의 소리에 귀를 기울이고 진실한 사랑을 추구하세요.",
-    warning: "유혹에 빠져 잘못된 선택을 하지 않도록 주의하세요. 갈등 상황에서 현명한 판단이 필요합니다."
+    warning: "유혹에 빠져 잘못된 선택을 하지 않도록 주의하세요. 갈등 상황에서 현명한 판단이 필요합니다.",
+    imageUrl: "/images/tarot/the-lovers.svg"
   },
   {
     id: 7,
@@ -125,7 +126,8 @@ export const tarotCards: TarotCard[] = [
     money: "꾸준한 노력을 통한 안정, 인내심 있는 투자",
     career: "내적 힘을 발휘하는 직업, 치유와 돌봄 관련 분야",
     advice: "내적 힘과 용기를 발휘하세요. 온화함과 인내심으로 어려움을 극복할 수 있습니다.",
-    warning: "지나친 관대함으로 이용당하지 않도록 주의하세요. 때로는 단호함도 필요합니다."
+    warning: "지나친 관대함으로 이용당하지 않도록 주의하세요. 때로는 단호함도 필요합니다.",
+    imageUrl: "/images/tarot/strength.svg"
   },
   {
     id: 9,

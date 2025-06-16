@@ -1,0 +1,88 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Mountain landscape -->
+  <polygon points="10,180 60,120 100,140 140,110 180,130 190,180 10,180" fill="#6b7280" opacity="0.6"/>
+  
+  <!-- Woman -->
+  <g transform="translate(100,150)">
+    <!-- Infinity symbol above head -->
+    <path d="M -8,-30 Q -4,-35 0,-30 Q 4,-35 8,-30 Q 4,-25 0,-30 Q -4,-25 -8,-30" fill="#fbbf24"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="10" fill="#fbbf24"/>
+    
+    <!-- Long flowing hair -->
+    <path d="M -10,-25 Q -15,-20 -12,-10" stroke="#eab308" stroke-width="3" fill="none"/>
+    <path d="M 10,-25 Q 15,-20 12,-10" stroke="#eab308" stroke-width="3" fill="none"/>
+    <path d="M -5,-28 Q -8,-15 -5,-5" stroke="#eab308" stroke-width="2" fill="none"/>
+    <path d="M 5,-28 Q 8,-15 5,-5" stroke="#eab308" stroke-width="2" fill="none"/>
+    
+    <!-- White dress -->
+    <rect x="-12" y="-10" width="24" height="40" rx="5" fill="#f3f4f6"/>
+    
+    <!-- Flower crown -->
+    <circle cx="-6" cy="-25" r="2" fill="#dc2626"/>
+    <circle cx="0" cy="-27" r="2" fill="#fbbf24"/>
+    <circle cx="6" cy="-25" r="2" fill="#3b82f6"/>
+    
+    <!-- Arms gently holding lion -->
+    <rect x="-18" y="0" width="8" height="3" rx="1.5" fill="#fbbf24"/>
+    <rect x="10" y="0" width="8" height="3" rx="1.5" fill="#fbbf24"/>
+    
+    <!-- Red lion -->
+    <g transform="translate(0,20)">
+      <!-- Lion body -->
+      <ellipse cx="0" cy="5" rx="15" ry="10" fill="#dc2626"/>
+      
+      <!-- Lion head -->
+      <circle cx="-8" cy="-2" r="8" fill="#dc2626"/>
+      
+      <!-- Mane -->
+      <circle cx="-8" cy="-2" r="12" fill="#f59e0b" opacity="0.8"/>
+      
+      <!-- Lion face -->
+      <circle cx="-11" cy="-5" r="1" fill="#1f2937"/>
+      <circle cx="-5" cy="-5" r="1" fill="#1f2937"/>
+      <path d="M -10,0 Q -8,3 -6,0" stroke="#1f2937" stroke-width="1" fill="none"/>
+      
+      <!-- Lion legs -->
+      <rect x="-12" y="15" width="3" height="8" fill="#dc2626"/>
+      <rect x="-6" y="15" width="3" height="8" fill="#dc2626"/>
+      <rect x="3" y="15" width="3" height="8" fill="#dc2626"/>
+      <rect x="9" y="15" width="3" height="8" fill="#dc2626"/>
+      
+      <!-- Lion tail -->
+      <path d="M 15,8 Q 20,5 18,12" stroke="#dc2626" stroke-width="3" fill="none"/>
+    </g>
+    
+    <!-- Woman's hands gently on lion's head -->
+    <circle cx="-15" cy="15" r="3" fill="#fbbf24"/>
+    <circle cx="15" cy="15" r="3" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Flowers in foreground -->
+  <g transform="translate(30,200)">
+    <circle cx="0" cy="0" r="4" fill="#dc2626"/>
+    <circle cx="15" cy="3" r="3" fill="#fbbf24"/>
+    <circle cx="30" cy="-2" r="4" fill="#8b5cf6"/>
+    <circle cx="110" cy="2" r="3" fill="#dc2626"/>
+    <circle cx="125" cy="-1" r="4" fill="#3b82f6"/>
+    <circle cx="140" cy="3" r="3" fill="#f59e0b"/>
+  </g>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">STRENGTH</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">힘</text>
+  
+  <!-- Card Number -->
+  <text x="20" y="40" font-family="serif" font-size="18" fill="#fbbf24" font-weight="bold">VIII</text>
+</svg>
