@@ -268,7 +268,8 @@ export const tarotCards: TarotCard[] = [
     money: "재정적 성공, 풍요로운 생활, 수익 증대",
     career: "성공과 명예, 승진과 인정",
     advice: "자신감을 가지고 적극적으로 행동하세요. 성공이 가까이 있습니다.",
-    warning: "과도한 자만심을 조심하고 겸손함을 잃지 마세요."
+    warning: "과도한 자만심을 조심하고 겸손함을 잃지 마세요.",
+    imageUrl: "/images/tarot/the-sun.svg"
   },
   {
     id: 20,
@@ -294,7 +295,8 @@ export const tarotCards: TarotCard[] = [
     money: "재정적 목표 달성, 경제적 안정과 풍요",
     career: "목표 달성, 성공적인 완결, 국제적 무대",
     advice: "목표를 향해 마지막까지 최선을 다하세요. 완성이 가까워졌습니다.",
-    warning: "성공에 안주하지 말고 새로운 도전을 준비하세요."
+    warning: "성공에 안주하지 말고 새로운 도전을 준비하세요.",
+    imageUrl: "/images/tarot/the-world.svg"
   }
 ];
 
