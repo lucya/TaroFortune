@@ -3,7 +3,6 @@ import type { TarotCard } from "@shared/schema";
 
 interface ReadingResultsProps {
   cards: TarotCard[];
-  onShare: () => void;
   onDrawAgain: () => void;
 }
 
@@ -11,7 +10,7 @@ const positions = ["과거", "현재", "미래"];
 const positionIcons = ["fas fa-history", "fas fa-clock", "fas fa-crystal-ball"];
 const positionColors = ["text-purple-300", "text-yellow-300", "text-blue-300"];
 
-export default function ReadingResults({ cards, onShare, onDrawAgain }: ReadingResultsProps) {
+export default function ReadingResults({ cards, onDrawAgain }: ReadingResultsProps) {
   const generatePositionMeaning = (card: TarotCard, position: string) => {
     const meanings = {
       '과거': `과거의 ${card.name} 카드는 ${card.keywords.slice(0, 3).join(', ')}의 영향을 받았음을 나타냅니다. 이는 현재 상황의 뿌리가 되는 경험이나 교훈을 의미합니다.`,

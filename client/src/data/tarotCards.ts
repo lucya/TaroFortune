@@ -84,7 +84,8 @@ export const tarotCards: TarotCard[] = [
     money: "보수적이고 안전한 투자, 전통적인 방식의 재테크, 정직한 방법으로 얻은 재물",
     career: "교육, 종교, 상담 등 지식과 지혜를 전하는 직업, 전통적인 직업군",
     advice: "기존의 지혜와 전통에서 배울 점을 찾아보세요. 스승을 찾거나 누군가를 가르칠 때입니다. 도덕적 가치를 중시하세요.",
-    warning: "지나친 보수성으로 변화의 기회를 놓치지 않도록 주의하세요. 독단적인 사고에 빠지지 않도록 하세요."
+    warning: "지나친 보수성으로 변화의 기회를 놓치지 않도록 주의하세요. 독단적인 사고에 빠지지 않도록 하세요.",
+    imageUrl: "/images/tarot/the-hierophant.svg"
   },
   {
     id: 6,
@@ -110,7 +111,8 @@ export const tarotCards: TarotCard[] = [
     money: "노력을 통한 성공, 목표한 수익 달성, 재정적 승리",
     career: "강한 의지력으로 성공, 경쟁에서 승리, 목표 달성",
     advice: "강한 의지력으로 목표를 향해 나아가세요. 장애물을 극복하고 승리를 쟁취할 수 있습니다.",
-    warning: "지나친 성급함이나 독단적 행동을 조심하세요. 균형을 잃지 않도록 주의하세요."
+    warning: "지나친 성급함이나 독단적 행동을 조심하세요. 균형을 잃지 않도록 주의하세요.",
+    imageUrl: "/images/tarot/the-chariot.svg"
   },
   {
     id: 8,
@@ -227,7 +229,8 @@ export const tarotCards: TarotCard[] = [
     money: "재정적 손실, 예상치 못한 지출, 투자 실패",
     career: "직장에서의 급변, 예상치 못한 변화",
     advice: "위기를 기회로 바꾸세요. 새로운 기반을 다질 때입니다.",
-    warning: "급작스러운 변화에 대비하고 차분하게 대응하세요."
+    warning: "급작스러운 변화에 대비하고 차분하게 대응하세요.",
+    imageUrl: "/images/tarot/the-tower.svg"
   },
   {
     id: 17,
