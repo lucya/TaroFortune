@@ -32,4 +32,5 @@ export interface TarotCard {
   advice: string;
   warning?: string;
   description?: string;
+  imageUrl?: string;
 }

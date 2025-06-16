@@ -1,0 +1,85 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="infinity" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.8" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Sky Background -->
+  <rect x="10" y="20" width="180" height="180" rx="10" fill="#1e40af" opacity="0.3"/>
+  
+  <!-- Infinity Symbol Above Head -->
+  <g transform="translate(100,40)">
+    <path d="M -15,0 Q -10,-8 0,0 Q 10,8 15,0 Q 10,-8 0,0 Q -10,8 -15,0" fill="url(#infinity)" stroke="#fbbf24" stroke-width="1"/>
+  </g>
+  
+  <!-- The Magician Figure -->
+  <g transform="translate(100,90)">
+    <!-- Head -->
+    <circle cx="0" cy="0" r="15" fill="#fbbf24"/>
+    
+    <!-- Red Robe -->
+    <rect x="-12" y="10" width="24" height="40" rx="5" fill="#dc2626"/>
+    
+    <!-- White Undergarment -->
+    <rect x="-8" y="15" width="16" height="35" rx="3" fill="#ffffff"/>
+    
+    <!-- Left Arm (pointing down) -->
+    <line x1="-15" y1="20" x2="-25" y2="35" stroke="#fbbf24" stroke-width="4"/>
+    
+    <!-- Right Arm (pointing up) -->
+    <line x1="15" y1="20" x2="25" y2="5" stroke="#fbbf24" stroke-width="4"/>
+    
+    <!-- Wand in right hand -->
+    <line x1="25" y1="5" x2="30" y2="-5" stroke="#8b4513" stroke-width="3"/>
+    <circle cx="30" cy="-5" r="2" fill="#fbbf24"/>
+    
+    <!-- Legs -->
+    <rect x="-8" y="50" width="6" height="20" rx="3" fill="#1f2937"/>
+    <rect x="2" y="50" width="6" height="20" rx="3" fill="#1f2937"/>
+    
+    <!-- Belt with Ouroboros -->
+    <rect x="-12" y="35" width="24" height="4" fill="#8b4513"/>
+    <circle cx="0" cy="37" r="3" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Table with Four Elements -->
+  <rect x="60" y="180" width="80" height="15" rx="5" fill="#8b4513"/>
+  
+  <!-- Wand (Fire) -->
+  <rect x="70" y="170" width="3" height="15" fill="#dc2626"/>
+  
+  <!-- Cup (Water) -->
+  <path d="M 90,180 Q 90,175 95,175 Q 100,175 100,180 L 100,185 L 90,185 Z" fill="#3b82f6"/>
+  
+  <!-- Sword (Air) -->
+  <rect x="110" y="175" width="2" height="10" fill="#6b7280"/>
+  <rect x="108" y="177" width="6" height="2" fill="#6b7280"/>
+  
+  <!-- Pentacle (Earth) -->
+  <circle cx="130" cy="180" r="4" fill="#eab308"/>
+  <polygon points="130,176 132,181 127,178 133,178 128,181" fill="#8b4513"/>
+  
+  <!-- Roses and Lilies -->
+  <g transform="translate(30,220)">
+    <circle cx="0" cy="0" r="4" fill="#dc2626"/>
+    <circle cx="15" cy="5" r="4" fill="#ffffff"/>
+    <circle cx="140" cy="0" r="4" fill="#dc2626"/>
+    <circle cx="125" cy="5" r="4" fill="#ffffff"/>
+  </g>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">THE MAGICIAN</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">마법사</text>
+  
+  <!-- Card Number -->
+  <text x="20" y="40" font-family="serif" font-size="18" fill="#fbbf24" font-weight="bold">I</text>
+</svg>
