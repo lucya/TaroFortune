@@ -22,7 +22,7 @@ export default function ReadingResults({ cards, onDrawAgain }: ReadingResultsPro
 
   const generateOverallReading = (cards: TarotCard[]) => {
     const overallKeywords = cards.flatMap(card => card.keywords.slice(0, 2));
-    const uniqueKeywords = [...new Set(overallKeywords)].slice(0, 5);
+    const uniqueKeywords = Array.from(new Set(overallKeywords)).slice(0, 5);
     
     return `당신의 타로 리딩은 ${uniqueKeywords.join(', ')}의 에너지를 보여줍니다. 
             과거의 경험이 현재에 영향을 미치고 있으며, 이는 미래의 새로운 가능성으로 이어질 것입니다. 
@@ -92,14 +92,7 @@ export default function ReadingResults({ cards, onDrawAgain }: ReadingResultsPro
       </div>
       
       {/* Action Buttons */}
-      <div className="text-center mt-12 space-x-4">
-        <button
-          onClick={onShare}
-          className="bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-yellow-950 font-semibold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
-        >
-          <i className="fas fa-share-alt mr-2"></i>
-          결과 공유하기
-        </button>
+      <div className="text-center mt-12">
         <button
           onClick={onDrawAgain}
           className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg border border-purple-400/50"

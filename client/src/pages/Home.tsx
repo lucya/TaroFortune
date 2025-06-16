@@ -5,7 +5,7 @@ import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 import type { TarotCard } from "@shared/schema";
 import { getRandomCards } from "@/data/tarotCards";
-import TarotCard from "@/components/TarotCard";
+import TarotCardComponent from "@/components/TarotCard";
 import CardModal from "@/components/CardModal";
 import ReadingResults from "@/components/ReadingResults";
 
@@ -54,29 +54,7 @@ export default function Home() {
     setIsModalOpen(true);
   };
 
-  const handleShare = () => {
-    if (!drawnCards.length) return;
-    
-    const shareText = `🔮 나의 타로 운세 결과:\n\n` +
-      `과거: ${drawnCards[0].name}\n` +
-      `현재: ${drawnCards[1].name}\n` +
-      `미래: ${drawnCards[2].name}\n\n` +
-      `✨ 신비로운 타로 운세에서 확인해보세요!`;
-    
-    if (navigator.share) {
-      navigator.share({
-        title: '나의 타로 운세 결과',
-        text: shareText
-      });
-    } else {
-      navigator.clipboard.writeText(shareText).then(() => {
-        toast({
-          title: "공유 완료",
-          description: "결과가 클립보드에 복사되었습니다!",
-        });
-      });
-    }
-  };
+
 
   const resetReading = () => {
     setDrawnCards([]);
@@ -233,7 +211,7 @@ export default function Home() {
             {/* Cards Display */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {drawnCards.map((card, index) => (
-                <TarotCard
+                <TarotCardComponent
                   key={card.id}
                   card={card}
                   position={["과거", "현재", "미래"][index] as "과거" | "현재" | "미래"}
@@ -246,7 +224,6 @@ export default function Home() {
             {/* Reading Results */}
             <ReadingResults
               cards={drawnCards}
-              onShare={handleShare}
               onDrawAgain={resetReading}
             />
           </section>
