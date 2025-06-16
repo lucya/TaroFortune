@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(262, 83%, 58%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(262, 83%, 58%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+
+  /* Custom fonts */
+  .font-serif {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Custom animations */
+@keyframes cardFlip {
+  0% { transform: rotateY(0deg); }
+  50% { transform: rotateY(90deg); }
+  100% { transform: rotateY(0deg); }
+}
+
+@keyframes cardDeal {
+  0% { transform: translateY(-100px) scale(0.8); opacity: 0; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+@keyframes mysticalGlow {
+  0% { box-shadow: 0 0 20px rgba(124, 58, 237, 0.5); }
+  100% { box-shadow: 0 0 40px rgba(124, 58, 237, 0.8); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-card-flip {
+  animation: cardFlip 0.8s ease-in-out;
+}
+
+.animate-card-deal {
+  animation: cardDeal 0.6s ease-out;
+}
+
+.animate-mystical-glow {
+  animation: mysticalGlow 2s ease-in-out infinite alternate;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Mystical color palette */
+.text-mystical-50 { color: hsl(254, 91%, 95%); }
+.text-mystical-100 { color: hsl(254, 84%, 88%); }
+.text-mystical-200 { color: hsl(256, 82%, 80%); }
+.text-mystical-300 { color: hsl(258, 79%, 72%); }
+.text-mystical-400 { color: hsl(260, 76%, 64%); }
+.text-mystical-500 { color: hsl(262, 73%, 56%); }
+.text-mystical-600 { color: hsl(264, 69%, 48%); }
+.text-mystical-700 { color: hsl(266, 65%, 40%); }
+.text-mystical-800 { color: hsl(268, 61%, 32%); }
+.text-mystical-900 { color: hsl(270, 57%, 24%); }
+.text-mystical-950 { color: hsl(272, 53%, 16%); }
+
+.bg-mystical-50 { background-color: hsl(254, 91%, 95%); }
+.bg-mystical-100 { background-color: hsl(254, 84%, 88%); }
+.bg-mystical-200 { background-color: hsl(256, 82%, 80%); }
+.bg-mystical-300 { background-color: hsl(258, 79%, 72%); }
+.bg-mystical-400 { background-color: hsl(260, 76%, 64%); }
+.bg-mystical-500 { background-color: hsl(262, 73%, 56%); }
+.bg-mystical-600 { background-color: hsl(264, 69%, 48%); }
+.bg-mystical-700 { background-color: hsl(266, 65%, 40%); }
+.bg-mystical-800 { background-color: hsl(268, 61%, 32%); }
+.bg-mystical-900 { background-color: hsl(270, 57%, 24%); }
+.bg-mystical-950 { background-color: hsl(272, 53%, 16%); }
