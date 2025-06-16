@@ -40,13 +40,22 @@ export default function CardModal({ card, isOpen, onClose }: CardModalProps) {
             </div>
             
             <div className="space-y-6">
-              {/* Card Image Placeholder */}
+              {/* Card Image */}
               <div className="bg-gradient-to-br from-purple-700 to-purple-800 rounded-xl p-6 border border-purple-500/30 text-center">
-                <div className="w-48 h-72 mx-auto bg-gradient-to-br from-purple-600 to-indigo-700 rounded-lg flex items-center justify-center mb-4">
-                  <div className="text-center text-purple-200">
-                    <i className="fas fa-infinity text-6xl mb-4 opacity-80"></i>
-                    <div className="font-serif text-sm opacity-60 tracking-widest">TAROT</div>
-                  </div>
+                <div className="w-48 h-72 mx-auto bg-gradient-to-br from-purple-600 to-indigo-700 rounded-lg flex items-center justify-center mb-4 overflow-hidden">
+                  {card.imageUrl ? (
+                    <img 
+                      src={card.imageUrl} 
+                      alt={card.name}
+                      className="w-full h-full object-contain rounded-lg"
+                      style={{ filter: 'drop-shadow(0 0 15px rgba(139, 92, 246, 0.7))' }}
+                    />
+                  ) : (
+                    <div className="text-center text-purple-200">
+                      <i className="fas fa-infinity text-6xl mb-4 opacity-80"></i>
+                      <div className="font-serif text-sm opacity-60 tracking-widest">TAROT</div>
+                    </div>
+                  )}
                 </div>
                 <span className="bg-purple-600/50 text-purple-100 px-3 py-1 rounded-full text-sm">
                   {card.type}

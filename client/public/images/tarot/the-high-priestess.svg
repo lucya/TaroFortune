@@ -1,0 +1,85 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="moonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e5e7eb;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#9ca3af;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Pillars -->
+  <rect x="30" y="40" width="15" height="140" fill="#374151"/>
+  <rect x="155" y="40" width="15" height="140" fill="#f3f4f6"/>
+  
+  <!-- Veil between pillars -->
+  <rect x="45" y="40" width="110" height="140" fill="#1e40af" opacity="0.3"/>
+  <pattern id="veilPattern" patternUnits="userSpaceOnUse" width="20" height="20">
+    <circle cx="10" cy="10" r="3" fill="#8b5cf6" opacity="0.4"/>
+  </pattern>
+  <rect x="45" y="40" width="110" height="140" fill="url(#veilPattern)"/>
+  
+  <!-- High Priestess Figure -->
+  <g transform="translate(100,120)">
+    <!-- Crown with crescent moon -->
+    <path d="M -8,-30 Q 0,-35 8,-30" stroke="#fbbf24" stroke-width="2" fill="none"/>
+    <circle cx="0" cy="-32" r="3" fill="#e5e7eb"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="12" fill="#fbbf24"/>
+    
+    <!-- Blue robe -->
+    <rect x="-15" y="-10" width="30" height="50" rx="5" fill="#1e40af"/>
+    
+    <!-- White inner garment -->
+    <rect x="-10" y="-5" width="20" height="40" rx="3" fill="#f3f4f6"/>
+    
+    <!-- Cross on chest -->
+    <rect x="-2" y="5" width="4" height="12" fill="#fbbf24"/>
+    <rect x="-5" y="9" width="10" height="4" fill="#fbbf24"/>
+    
+    <!-- Arms -->
+    <rect x="-20" y="10" width="8" height="3" rx="1.5" fill="#1e40af"/>
+    <rect x="12" y="10" width="8" height="3" rx="1.5" fill="#1e40af"/>
+    
+    <!-- Scroll in hand -->
+    <rect x="15" y="8" width="6" height="8" rx="1" fill="#f3f4f6"/>
+    <text x="18" y="13" font-size="3" fill="#374151" text-anchor="middle">TORA</text>
+    
+    <!-- Seated position -->
+    <rect x="-12" y="40" width="24" height="15" rx="3" fill="#1e40af"/>
+  </g>
+  
+  <!-- Moon phases at feet -->
+  <g transform="translate(100,200)">
+    <!-- Crescent moon -->
+    <path d="M -20,0 Q -15,-10 -10,0 Q -15,10 -20,0" fill="#e5e7eb"/>
+    <!-- Full moon -->
+    <circle cx="0" cy="0" r="6" fill="#f3f4f6"/>
+    <!-- Crescent moon -->
+    <path d="M 10,0 Q 15,-10 20,0 Q 15,10 10,0" fill="#e5e7eb"/>
+  </g>
+  
+  <!-- Water at bottom -->
+  <path d="M 20,220 Q 50,210 80,220 T 140,220 T 180,220 L 180,240 L 20,240 Z" fill="#3b82f6" opacity="0.6"/>
+  
+  <!-- Pomegranates on veil -->
+  <g opacity="0.7">
+    <circle cx="70" cy="80" r="4" fill="#dc2626"/>
+    <circle cx="130" cy="100" r="4" fill="#dc2626"/>
+    <circle cx="80" cy="120" r="4" fill="#dc2626"/>
+    <circle cx="120" cy="140" r="4" fill="#dc2626"/>
+  </g>
+  
+  <!-- Card Title -->
+  <text x="100" y="260" text-anchor="middle" font-family="serif" font-size="12" fill="#e5e7eb" font-weight="bold">THE HIGH PRIESTESS</text>
+  <text x="100" y="280" text-anchor="middle" font-family="serif" font-size="11" fill="#d1d5db">여교황</text>
+  
+  <!-- Card Number -->
+  <text x="20" y="40" font-family="serif" font-size="18" fill="#fbbf24" font-weight="bold">II</text>
+</svg>

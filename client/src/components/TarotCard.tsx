@@ -35,29 +35,44 @@ export default function TarotCard({ card, position, index, onClick }: TarotCardP
           <h4 className="font-serif text-lg font-semibold text-purple-200">{position}</h4>
         </div>
         
-        <div className="relative bg-gradient-to-br from-purple-700 to-purple-800 rounded-xl p-6 mb-4 border border-purple-500/30 min-h-[240px] flex items-center justify-center overflow-hidden">
-          {/* Mystical background pattern */}
-          <div className="absolute inset-0 opacity-20">
-            <div className="absolute inset-0 bg-repeat" style={{
-              backgroundImage: `url("data:image/svg+xml,<svg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'><g fill='none' fill-rule='evenodd'><g fill='%23ffffff' fill-opacity='0.1'><circle cx='30' cy='30' r='1'/><circle cx='15' cy='15' r='0.5'/><circle cx='45' cy='45' r='0.5'/></g></g></svg>")`
-            }} />
-          </div>
-          
-          {/* Card back design */}
-          <div className="relative z-10 text-center text-purple-200">
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              className="mb-4"
-            >
-              <i className="fas fa-infinity text-4xl opacity-80"></i>
-            </motion.div>
-            <div className="font-serif text-xs opacity-60 tracking-widest">TAROT</div>
-            <div className="mt-2 text-xs opacity-40">✦ ✧ ✦</div>
-          </div>
-          
-          {/* Mystical glow effect */}
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-xl animate-pulse" />
+        <div className="relative bg-gradient-to-br from-purple-700 to-purple-800 rounded-xl p-4 mb-4 border border-purple-500/30 min-h-[240px] flex items-center justify-center overflow-hidden">
+          {card.imageUrl ? (
+            /* Card Image */
+            <div className="relative z-10 w-full h-full flex items-center justify-center">
+              <img 
+                src={card.imageUrl} 
+                alt={card.name}
+                className="max-w-full max-h-full object-contain rounded-lg"
+                style={{ filter: 'drop-shadow(0 0 10px rgba(139, 92, 246, 0.5))' }}
+              />
+            </div>
+          ) : (
+            /* Fallback mystical design */
+            <>
+              {/* Mystical background pattern */}
+              <div className="absolute inset-0 opacity-20">
+                <div className="absolute inset-0 bg-repeat" style={{
+                  backgroundImage: `url("data:image/svg+xml,<svg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'><g fill='none' fill-rule='evenodd'><g fill='%23ffffff' fill-opacity='0.1'><circle cx='30' cy='30' r='1'/><circle cx='15' cy='15' r='0.5'/><circle cx='45' cy='45' r='0.5'/></g></g></svg>")`
+                }} />
+              </div>
+              
+              {/* Card back design */}
+              <div className="relative z-10 text-center text-purple-200">
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                  className="mb-4"
+                >
+                  <i className="fas fa-infinity text-4xl opacity-80"></i>
+                </motion.div>
+                <div className="font-serif text-xs opacity-60 tracking-widest">TAROT</div>
+                <div className="mt-2 text-xs opacity-40">✦ ✧ ✦</div>
+              </div>
+              
+              {/* Mystical glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 rounded-xl animate-pulse" />
+            </>
+          )}
         </div>
         
         <div className="text-center">
