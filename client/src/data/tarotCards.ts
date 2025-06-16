@@ -145,12 +145,164 @@ export const tarotCards: TarotCard[] = [
     career: "인생의 전환점, 새로운 기회의 도래",
     advice: "변화의 흐름에 몸을 맡기세요. 새로운 기회가 다가오고 있습니다.",
     warning: "급작스러운 변화에 대비하세요. 모든 것이 영원하지 않음을 기억하세요."
+  },
+  {
+    id: 11,
+    name: "정의",
+    englishName: "JUSTICE",
+    type: "메이저 아르카나",
+    keywords: ["공정함", "균형", "정의", "법", "진실", "심판", "책임", "결과", "공평함", "올바름"],
+    love: "공정하고 균형 잡힌 관계, 서로에 대한 책임감",
+    relationship: "공평한 관계, 서로를 존중하는 사이",
+    money: "정당한 방법으로 얻은 재물, 공정한 거래",
+    career: "법조계, 공무원, 정의와 관련된 직업에 적합",
+    advice: "공정하고 균형 잡힌 판단을 하세요. 진실을 추구하고 책임감을 가지세요.",
+    warning: "불공정한 행동이나 편견을 조심하세요. 모든 행동에는 결과가 따릅니다."
+  },
+  {
+    id: 12,
+    name: "매달린 사람",
+    englishName: "THE HANGED MAN",
+    type: "메이저 아르카나",
+    keywords: ["희생", "인내", "포기", "기다림", "성찰", "새로운 관점", "정지", "깨달음", "수용", "시련"],
+    love: "일방적인 사랑, 희생적인 마음, 기다림의 시간",
+    relationship: "양보와 희생이 필요한 관계, 인내심이 요구되는 상황",
+    money: "투자 손실, 경제적 어려움, 인내가 필요한 시기",
+    career: "정체된 상황, 승진이나 발전이 지연되는 시기",
+    advice: "현재 상황을 받아들이고 인내하세요. 새로운 관점에서 상황을 바라보세요.",
+    warning: "너무 수동적이 되지 않도록 주의하세요. 때로는 적극적인 행동이 필요합니다."
+  },
+  {
+    id: 13,
+    name: "죽음",
+    englishName: "DEATH",
+    type: "메이저 아르카나",
+    keywords: ["변화", "끝", "새로운 시작", "변신", "해방", "재생", "순환", "마무리", "혁신", "전환"],
+    love: "관계의 끝과 새로운 시작, 중대한 변화",
+    relationship: "관계의 변화, 새로운 단계로의 전환",
+    money: "재정적 변화, 새로운 수입원, 투자 전략의 변화",
+    career: "직업의 변화, 새로운 분야로의 전환",
+    advice: "변화를 받아들이고 새로운 시작을 준비하세요. 과거에 매달리지 마세요.",
+    warning: "변화를 두려워하지 말고 적극적으로 대응하세요."
+  },
+  {
+    id: 14,
+    name: "절제",
+    englishName: "TEMPERANCE",
+    type: "메이저 아르카나",
+    keywords: ["조화", "균형", "절제", "중용", "치유", "인내", "조절", "화합", "안정", "통합"],
+    love: "조화로운 관계, 서로를 이해하고 배려하는 사랑",
+    relationship: "균형 잡힌 관계, 서로의 차이를 인정하는 사이",
+    money: "안정적인 재정 관리, 적절한 저축과 소비의 균형",
+    career: "팀워크가 중요한 직업, 치유와 상담 관련 분야",
+    advice: "모든 일에 균형과 절제를 유지하세요. 극단적인 행동을 피하세요.",
+    warning: "지나친 타협이나 우유부단함을 조심하세요."
+  },
+  {
+    id: 15,
+    name: "악마",
+    englishName: "THE DEVIL",
+    type: "메이저 아르카나",
+    keywords: ["유혹", "속박", "중독", "욕망", "물질주义", "강박", "집착", "어둠", "타락", "의존"],
+    love: "불건전한 관계, 집착적인 사랑, 육체적 욕망",
+    relationship: "의존적인 관계, 건강하지 못한 유대감",
+    money: "물질적 욕심, 도박이나 투기에 빠짐, 금전적 유혹",
+    career: "부정한 방법으로 이익을 취하려는 유혹",
+    advice: "유혹과 집착에서 벗어나세요. 진정한 자유를 찾으세요.",
+    warning: "중독이나 나쁜 습관에 빠지지 않도록 주의하세요."
+  },
+  {
+    id: 16,
+    name: "탑",
+    englishName: "THE TOWER",
+    type: "메이저 아르카나",
+    keywords: ["파괴", "붕괴", "충격", "급변", "깨달음", "해방", "혁명", "위기", "재건", "진실"],
+    love: "갑작스러운 이별, 관계의 급변, 충격적인 진실",
+    relationship: "갈등과 충돌, 관계의 위기",
+    money: "재정적 손실, 예상치 못한 지출, 투자 실패",
+    career: "직장에서의 급변, 예상치 못한 변화",
+    advice: "위기를 기회로 바꾸세요. 새로운 기반을 다질 때입니다.",
+    warning: "급작스러운 변화에 대비하고 차분하게 대응하세요."
+  },
+  {
+    id: 17,
+    name: "별",
+    englishName: "THE STAR",
+    type: "메이저 아르카나",
+    keywords: ["희망", "치유", "영감", "평화", "직관", "꿈", "소원", "재생", "축복", "밝은 미래"],
+    love: "이상적인 사랑, 영혼의 동반자, 희망적인 관계",
+    relationship: "치유와 화해, 평화로운 관계",
+    money: "재정적 회복, 꾸준한 수입, 희망적인 투자",
+    career: "예술과 창작 분야, 치유와 상담 관련 직업",
+    advice: "희망을 잃지 마세요. 꿈을 향해 꾸준히 나아가세요.",
+    warning: "너무 이상적으로만 생각하지 말고 현실적인 계획도 세우세요."
+  },
+  {
+    id: 18,
+    name: "달",
+    englishName: "THE MOON",
+    type: "메이저 아르카나",
+    keywords: ["환상", "불안", "혼란", "직감", "무의식", "꿈", "착각", "미지", "신비", "감정"],
+    love: "불확실한 관계, 감정의 혼란, 착각과 오해",
+    relationship: "숨겨진 감정, 오해와 불신",
+    money: "재정적 불안, 불확실한 투자, 사기에 주의",
+    career: "불분명한 상황, 직장에서의 불안과 혼란",
+    advice: "직감을 믿되 현실을 정확히 파악하세요. 감정에 휩쓸리지 마세요.",
+    warning: "착각이나 환상에 빠지지 않도록 조심하세요."
+  },
+  {
+    id: 19,
+    name: "태양",
+    englishName: "THE SUN",
+    type: "메이저 아르카나",
+    keywords: ["기쁨", "성공", "활력", "긍정", "성취", "명예", "행복", "축복", "번영", "생명력"],
+    love: "행복한 연애, 결혼, 축복받는 관계",
+    relationship: "밝고 긍정적인 관계, 서로에게 기쁨을 주는 사이",
+    money: "재정적 성공, 풍요로운 생활, 수익 증대",
+    career: "성공과 명예, 승진과 인정",
+    advice: "자신감을 가지고 적극적으로 행동하세요. 성공이 가까이 있습니다.",
+    warning: "과도한 자만심을 조심하고 겸손함을 잃지 마세요."
+  },
+  {
+    id: 20,
+    name: "심판",
+    englishName: "JUDGEMENT",
+    type: "메이저 아르카나",
+    keywords: ["재생", "각성", "용서", "속죄", "새로운 기회", "소명", "부활", "깨달음", "평가", "결산"],
+    love: "재회, 용서, 관계의 재평가",
+    relationship: "과거의 상처 치유, 새로운 시작",
+    money: "재정적 재평가, 새로운 투자 기회",
+    career: "새로운 소명 발견, 경력의 재평가",
+    advice: "과거를 정리하고 새로운 시작을 준비하세요. 용서와 화해가 필요합니다.",
+    warning: "과거에 너무 얽매이지 말고 미래를 향해 나아가세요."
+  },
+  {
+    id: 21,
+    name: "세계",
+    englishName: "THE WORLD",
+    type: "메이저 아르카나",
+    keywords: ["완성", "성취", "통합", "완전", "여행", "성공", "목표 달성", "만족", "조화", "완결"],
+    love: "완벽한 사랑, 결혼, 이상적인 관계의 완성",
+    relationship: "조화롭고 완전한 관계, 서로를 완전히 이해하는 사이",
+    money: "재정적 목표 달성, 경제적 안정과 풍요",
+    career: "목표 달성, 성공적인 완결, 국제적 무대",
+    advice: "목표를 향해 마지막까지 최선을 다하세요. 완성이 가까워졌습니다.",
+    warning: "성공에 안주하지 말고 새로운 도전을 준비하세요."
   }
 ];
 
 export function getRandomCards(count: number = 3): TarotCard[] {
-  const shuffled = [...tarotCards].sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, count);
+  // 피셔-예이츠 셔플 알고리즘을 사용한 더 안전한 랜덤 선택
+  const availableCards = [...tarotCards];
+  const selectedCards: TarotCard[] = [];
+  
+  for (let i = 0; i < count && availableCards.length > 0; i++) {
+    const randomIndex = Math.floor(Math.random() * availableCards.length);
+    selectedCards.push(availableCards[randomIndex]);
+    availableCards.splice(randomIndex, 1); // 선택된 카드는 제거하여 중복 방지
+  }
+  
+  return selectedCards;
 }
 
 export function getCardById(id: number): TarotCard | undefined {
