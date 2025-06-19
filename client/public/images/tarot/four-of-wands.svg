@@ -1,0 +1,59 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Four wands forming canopy -->
+  <rect x="50" y="60" width="4" height="80" fill="#8b4513"/>
+  <rect x="146" y="60" width="4" height="80" fill="#8b4513"/>
+  <rect x="70" y="70" width="4" height="70" fill="#8b4513"/>
+  <rect x="126" y="70" width="4" height="70" fill="#8b4513"/>
+  
+  <!-- Garland connecting wands -->
+  <path d="M 52,65 Q 75,55 100,60 Q 125,55 148,65" stroke="#16a34a" stroke-width="4" fill="none"/>
+  <path d="M 72,75 Q 85,70 100,72 Q 115,70 128,75" stroke="#16a34a" stroke-width="3" fill="none"/>
+  
+  <!-- Flowers on garland -->
+  <circle cx="65" cy="60" r="3" fill="#dc2626"/>
+  <circle cx="85" cy="57" r="3" fill="#fbbf24"/>
+  <circle cx="100" cy="60" r="3" fill="#8b5cf6"/>
+  <circle cx="115" cy="57" r="3" fill="#f59e0b"/>
+  <circle cx="135" cy="60" r="3" fill="#dc2626"/>
+  
+  <!-- Celebrating figures -->
+  <g transform="translate(70,160)">
+    <circle cx="0" cy="-15" r="5" fill="#fbbf24"/>
+    <rect x="-4" y="-10" width="8" height="20" rx="2" fill="#3b82f6"/>
+    <rect x="-8" y="-5" width="6" height="3" rx="1.5" fill="#fbbf24"/>
+    <rect x="2" y="-5" width="6" height="3" rx="1.5" fill="#fbbf24"/>
+  </g>
+  
+  <g transform="translate(130,160)">
+    <circle cx="0" cy="-15" r="5" fill="#fbbf24"/>
+    <rect x="-4" y="-10" width="8" height="20" rx="2" fill="#dc2626"/>
+    <rect x="-8" y="-5" width="6" height="3" rx="1.5" fill="#fbbf24"/>
+    <rect x="2" y="-5" width="6" height="3" rx="1.5" fill="#fbbf24"/>
+    <!-- Long hair -->
+    <path d="M -5,-18 Q -7,-13 -4,-8" stroke="#8b4513" stroke-width="2" fill="none"/>
+    <path d="M 5,-18 Q 7,-13 4,-8" stroke="#8b4513" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Castle in background -->
+  <g transform="translate(100,120)">
+    <rect x="-20" y="0" width="40" height="25" fill="#6b7280"/>
+    <rect x="-15" y="-5" width="8" height="30" fill="#6b7280"/>
+    <rect x="7" y="-5" width="8" height="30" fill="#6b7280"/>
+    <polygon points="-11,-5 -11,-12 -7,-5" fill="#dc2626"/>
+    <polygon points="11,-5 11,-12 15,-5" fill="#dc2626"/>
+  </g>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">FOUR OF WANDS</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">완드 4</text>
+</svg>

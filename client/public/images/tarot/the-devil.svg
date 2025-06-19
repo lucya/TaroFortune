@@ -1,0 +1,106 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Pedestal -->
+  <rect x="80" y="180" width="40" height="20" rx="3" fill="#374151"/>
+  
+  <!-- Devil figure -->
+  <g transform="translate(100,140)">
+    <!-- Horns -->
+    <path d="M -8,-25 Q -12,-35 -6,-30" stroke="#dc2626" stroke-width="3" fill="none"/>
+    <path d="M 8,-25 Q 12,-35 6,-30" stroke="#dc2626" stroke-width="3" fill="none"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="10" fill="#dc2626"/>
+    
+    <!-- Eyes -->
+    <circle cx="-3" cy="-23" r="2" fill="#fbbf24"/>
+    <circle cx="3" cy="-23" r="2" fill="#fbbf24"/>
+    
+    <!-- Third eye -->
+    <polygon points="0,-28 -2,-25 2,-25" fill="#8b5cf6"/>
+    
+    <!-- Body -->
+    <rect x="-12" y="-10" width="24" height="30" rx="4" fill="#dc2626"/>
+    
+    <!-- Bat wings -->
+    <path d="M -15,-5 Q -25,-10 -20,5 Q -15,0 -12,5" fill="#1f2937"/>
+    <path d="M 15,-5 Q 25,-10 20,5 Q 15,0 12,5" fill="#1f2937"/>
+    
+    <!-- Pentagram on chest -->
+    <g transform="translate(0,0)">
+      <polygon points="0,-8 -3,-3 -6,-8 -2,-5 2,-5" fill="#fbbf24"/>
+    </g>
+    
+    <!-- Arms raised -->
+    <rect x="-18" y="-5" width="8" height="4" rx="2" fill="#dc2626"/>
+    <rect x="10" y="-5" width="8" height="4" rx="2" fill="#dc2626"/>
+    
+    <!-- Torch in right hand -->
+    <g transform="translate(15,-8)">
+      <rect x="-1" y="0" width="2" height="8" fill="#8b4513"/>
+      <polygon points="-2,0 0,-5 2,0" fill="#f59e0b"/>
+    </g>
+    
+    <!-- Legs -->
+    <rect x="-8" y="20" width="6" height="15" fill="#dc2626"/>
+    <rect x="2" y="20" width="6" height="15" fill="#dc2626"/>
+    
+    <!-- Hooves -->
+    <ellipse cx="-5" cy="37" rx="3" ry="2" fill="#1f2937"/>
+    <ellipse cx="5" cy="37" rx="3" ry="2" fill="#1f2937"/>
+    
+    <!-- Tail -->
+    <path d="M 0,20 Q 8,25 5,35" stroke="#dc2626" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Chained figures -->
+  <!-- Man -->
+  <g transform="translate(70,200)">
+    <circle cx="0" cy="-10" r="5" fill="#fbbf24"/>
+    <rect x="-4" y="-5" width="8" height="15" rx="2" fill="#fbbf24"/>
+    <rect x="-3" y="10" width="2" height="8" fill="#fbbf24"/>
+    <rect x="1" y="10" width="2" height="8" fill="#fbbf24"/>
+    <!-- Chain around neck -->
+    <ellipse cx="0" cy="-5" rx="4" ry="2" stroke="#6b7280" stroke-width="2" fill="none"/>
+    <!-- Horns -->
+    <path d="M -3,-12 L -1,-15" stroke="#8b4513" stroke-width="2"/>
+    <path d="M 3,-12 L 1,-15" stroke="#8b4513" stroke-width="2"/>
+  </g>
+  
+  <!-- Woman -->
+  <g transform="translate(130,200)">
+    <circle cx="0" cy="-10" r="5" fill="#fbbf24"/>
+    <rect x="-4" y="-5" width="8" height="15" rx="2" fill="#fbbf24"/>
+    <rect x="-3" y="10" width="2" height="8" fill="#fbbf24"/>
+    <rect x="1" y="10" width="2" height="8" fill="#fbbf24"/>
+    <!-- Chain around neck -->
+    <ellipse cx="0" cy="-5" rx="4" ry="2" stroke="#6b7280" stroke-width="2" fill="none"/>
+    <!-- Horns -->
+    <path d="M -3,-12 L -1,-15" stroke="#8b4513" stroke-width="2"/>
+    <path d="M 3,-12 L 1,-15" stroke="#8b4513" stroke-width="2"/>
+    <!-- Hair -->
+    <path d="M -5,-12 Q -7,-8 -4,-5" stroke="#8b4513" stroke-width="2" fill="none"/>
+    <path d="M 5,-12 Q 7,-8 4,-5" stroke="#8b4513" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Chains connecting to devil -->
+  <rect x="97" y="165" width="2" height="15" fill="#6b7280"/>
+  <rect x="75" y="180" width="20" height="2" fill="#6b7280"/>
+  <rect x="105" y="180" width="20" height="2" fill="#6b7280"/>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">THE DEVIL</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">악마</text>
+  
+  <!-- Card Number -->
+  <text x="20" y="40" font-family="serif" font-size="18" fill="#fbbf24" font-weight="bold">XV</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Divine hand -->
+  <g transform="translate(100,80)">
+    <rect x="-15" y="0" width="30" height="4" rx="2" fill="#fbbf24"/>
+    <circle cx="-12" cy="2" r="3" fill="#fbbf24"/>
+    <circle cx="-4" cy="2" r="3" fill="#fbbf24"/>
+    <circle cx="4" cy="2" r="3" fill="#fbbf24"/>
+    <circle cx="12" cy="2" r="3" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Large pentacle -->
+  <g transform="translate(100,140)">
+    <circle cx="0" cy="0" r="25" fill="#fbbf24" stroke="#f59e0b" stroke-width="3"/>
+    <polygon points="0,-20 -6,-6 -19,-6 -9,2 -15,16 0,8 15,16 9,2 19,-6 6,-6" fill="#dc2626"/>
+  </g>
+  
+  <!-- Garden path -->
+  <path d="M 100,190 Q 120,200 140,210 Q 160,220 180,230" stroke="#a16207" stroke-width="4" fill="none"/>
+  
+  <!-- Archway of flowers -->
+  <g transform="translate(130,200)">
+    <path d="M -20,0 Q -15,-15 0,-15 Q 15,-15 20,0" stroke="#16a34a" stroke-width="4" fill="none"/>
+    <circle cx="-15" cy="-8" r="3" fill="#dc2626"/>
+    <circle cx="-5" cy="-12" r="3" fill="#fbbf24"/>
+    <circle cx="5" cy="-12" r="3" fill="#8b5cf6"/>
+    <circle cx="15" cy="-8" r="3" fill="#f59e0b"/>
+    <circle cx="-10" cy="-5" r="2" fill="#16a34a"/>
+    <circle cx="10" cy="-5" r="2" fill="#16a34a"/>
+  </g>
+  
+  <!-- Garden flowers -->
+  <g transform="translate(60,210)">
+    <rect x="0" y="0" width="2" height="15" fill="#16a34a"/>
+    <circle cx="1" cy="-2" r="4" fill="#dc2626"/>
+    <rect x="10" y="2" width="2" height="12" fill="#16a34a"/>
+    <circle cx="11" cy="0" r="3" fill="#fbbf24"/>
+    <rect x="20" y="1" width="2" height="13" fill="#16a34a"/>
+    <circle cx="21" cy="-1" r="3" fill="#8b5cf6"/>
+  </g>
+  
+  <!-- Mountains -->
+  <polygon points="10,220 40,180 80,190 120,175 160,185 190,170 190,240 10,240" fill="#6b7280" opacity="0.5"/>
+  
+  <!-- Lilies -->
+  <g transform="translate(40,200)">
+    <rect x="0" y="0" width="2" height="20" fill="#16a34a"/>
+    <ellipse cx="1" cy="-3" rx="5" ry="8" fill="#f3f4f6"/>
+    <circle cx="1" cy="-3" r="2" fill="#fbbf24"/>
+  </g>
+  
+  <g transform="translate(160,205)">
+    <rect x="0" y="0" width="2" height="15" fill="#16a34a"/>
+    <ellipse cx="1" cy="-3" rx="4" ry="6" fill="#f3f4f6"/>
+    <circle cx="1" cy="-3" r="1" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Card Title -->
+  <text x="100" y="260" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">ACE OF PENTACLES</text>
+  <text x="100" y="280" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">펜타클 에이스</text>
+</svg>

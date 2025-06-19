@@ -1,0 +1,56 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Victorious rider -->
+  <g transform="translate(100,140)">
+    <!-- Horse -->
+    <ellipse cx="0" cy="15" rx="20" ry="12" fill="#f3f4f6"/>
+    <ellipse cx="-15" cy="10" rx="8" ry="10" fill="#f3f4f6"/>
+    
+    <!-- Rider -->
+    <circle cx="0" cy="-10" r="6" fill="#fbbf24"/>
+    <rect x="-6" y="-4" width="12" height="18" rx="2" fill="#dc2626"/>
+    
+    <!-- Laurel wreath -->
+    <ellipse cx="0" cy="-10" rx="10" ry="6" stroke="#16a34a" stroke-width="3" fill="none"/>
+    
+    <!-- Victory wand -->
+    <rect x="8" y="-15" width="3" height="20" fill="#8b4513"/>
+    <ellipse cx="9.5" cy="-17" rx="2" ry="4" fill="#16a34a"/>
+    
+    <!-- Victory banner -->
+    <rect x="11" y="-15" width="12" height="8" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Crowd cheering -->
+  <g transform="translate(60,180)">
+    <circle cx="0" cy="-8" r="4" fill="#fbbf24"/>
+    <rect x="-3" y="-4" width="6" height="12" rx="1" fill="#3b82f6"/>
+    <rect x="3" y="-6" width="2" height="8" fill="#8b4513"/>
+  </g>
+  
+  <g transform="translate(140,185)">
+    <circle cx="0" cy="-8" r="4" fill="#fbbf24"/>
+    <rect x="-3" y="-4" width="6" height="12" rx="1" fill="#16a34a"/>
+    <rect x="-8" y="-6" width="2" height="8" fill="#8b4513"/>
+  </g>
+  
+  <!-- Five additional wands -->
+  <rect x="40" y="160" width="3" height="15" fill="#8b4513"/>
+  <rect x="55" y="155" width="3" height="20" fill="#8b4513"/>
+  <rect x="145" y="158" width="3" height="17" fill="#8b4513"/>
+  <rect x="160" y="162" width="3" height="13" fill="#8b4513"/>
+  <rect x="175" y="165" width="3" height="10" fill="#8b4513"/>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">SIX OF WANDS</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">완드 6</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Grieving figure -->
+  <g transform="translate(100,140)">
+    <circle cx="0" cy="-20" r="6" fill="#fbbf24"/>
+    <rect x="-8" y="-14" width="16" height="25" rx="3" fill="#1f2937"/>
+    <!-- Head down in grief -->
+    <path d="M -4,-25 Q 0,-30 4,-25" stroke="#1f2937" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Three spilled cups -->
+  <g transform="translate(70,180)">
+    <rect x="-3" y="-2" width="6" height="8" rx="2" fill="#fbbf24" transform="rotate(45)"/>
+    <!-- Spilled liquid -->
+    <path d="M 5,5 Q 10,8 8,12" stroke="#dc2626" stroke-width="3" fill="none"/>
+  </g>
+  
+  <g transform="translate(90,185)">
+    <rect x="-3" y="-2" width="6" height="8" rx="2" fill="#fbbf24" transform="rotate(-30)"/>
+    <path d="M -5,8 Q -8,12 -5,15" stroke="#dc2626" stroke-width="3" fill="none"/>
+  </g>
+  
+  <g transform="translate(110,182)">
+    <rect x="-3" y="-2" width="6" height="8" rx="2" fill="#fbbf24" transform="rotate(60)"/>
+    <path d="M 8,3 Q 12,6 10,10" stroke="#dc2626" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Two standing cups behind -->
+  <g transform="translate(120,175)">
+    <rect x="-3" y="-2" width="6" height="8" rx="2" fill="#fbbf24"/>
+    <ellipse cx="0" cy="-2" rx="3" ry="1" fill="#f59e0b"/>
+  </g>
+  
+  <g transform="translate(135,175)">
+    <rect x="-3" y="-2" width="6" height="8" rx="2" fill="#fbbf24"/>
+    <ellipse cx="0" cy="-2" rx="3" ry="1" fill="#f59e0b"/>
+  </g>
+  
+  <!-- Bridge in background -->
+  <path d="M 40,160 Q 70,150 100,160 Q 130,150 160,160" stroke="#6b7280" stroke-width="4" fill="none"/>
+  <rect x="95" y="155" width="10" height="3" fill="#6b7280"/>
+  
+  <!-- River -->
+  <path d="M 10,190 Q 50,185 100,190 Q 150,195 190,190" stroke="#3b82f6" stroke-width="6" fill="none"/>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">FIVE OF CUPS</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">성배 5</text>
+</svg>

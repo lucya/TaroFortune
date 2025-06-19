@@ -1,0 +1,61 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Castle battlement -->
+  <rect x="30" y="100" width="140" height="60" fill="#6b7280"/>
+  <rect x="25" y="95" width="150" height="10" fill="#8b4513"/>
+  <polygon points="40,95 45,85 50,95" fill="#6b7280"/>
+  <polygon points="70,95 75,85 80,95" fill="#6b7280"/>
+  <polygon points="130,95 135,85 140,95" fill="#6b7280"/>
+  <polygon points="160,95 165,85 170,95" fill="#6b7280"/>
+  
+  <!-- Figure on battlements -->
+  <g transform="translate(100,120)">
+    <!-- Head -->
+    <circle cx="0" cy="-15" r="6" fill="#fbbf24"/>
+    
+    <!-- Red robe -->
+    <rect x="-8" y="-9" width="16" height="25" rx="3" fill="#dc2626"/>
+    
+    <!-- Globe in left hand -->
+    <g transform="translate(-12,-5)">
+      <circle cx="0" cy="0" r="4" fill="#3b82f6"/>
+      <path d="M -3,-2 Q 0,-4 3,-2" stroke="#16a34a" stroke-width="1" fill="none"/>
+      <path d="M -3,0 Q 0,2 3,0" stroke="#16a34a" stroke-width="1" fill="none"/>
+    </g>
+    
+    <!-- Wand in right hand -->
+    <rect x="8" y="-10" width="3" height="15" fill="#8b4513"/>
+    <ellipse cx="9.5" cy="-12" rx="2" ry="4" fill="#16a34a"/>
+  </g>
+  
+  <!-- Mounted wand on left -->
+  <g transform="translate(50,130)">
+    <rect x="0" y="0" width="3" height="20" fill="#8b4513"/>
+    <ellipse cx="1.5" cy="-2" rx="2" ry="4" fill="#16a34a"/>
+  </g>
+  
+  <!-- Landscape view -->
+  <polygon points="10,180 60,170 120,175 180,165 190,220 10,220" fill="#16a34a" opacity="0.5"/>
+  
+  <!-- Sea in distance -->
+  <path d="M 10,190 Q 50,185 100,190 Q 150,195 190,190" stroke="#3b82f6" stroke-width="4" fill="none"/>
+  
+  <!-- Ships -->
+  <g transform="translate(70,185)">
+    <path d="M 0,0 Q 5,-2 10,0 L 8,4 L 2,4 Z" fill="#8b4513"/>
+    <rect x="5" y="-8" width="1" height="8" fill="#8b4513"/>
+  </g>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">TWO OF WANDS</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">완드 2</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Desert landscape -->
+  <polygon points="10,180 60,160 120,170 180,155 190,220 10,220" fill="#f59e0b" opacity="0.6"/>
+  
+  <!-- River -->
+  <path d="M 10,200 Q 50,195 100,200 Q 150,205 190,200" stroke="#3b82f6" stroke-width="6" fill="none"/>
+  
+  <!-- Knight on horse -->
+  <g transform="translate(120,160)">
+    <!-- Horse -->
+    <ellipse cx="-10" cy="15" rx="25" ry="15" fill="#f3f4f6"/>
+    <ellipse cx="-25" cy="10" rx="10" ry="12" fill="#f3f4f6"/>
+    <!-- Horse legs -->
+    <rect x="-30" y="30" width="4" height="15" fill="#f3f4f6"/>
+    <rect x="-20" y="30" width="4" height="15" fill="#f3f4f6"/>
+    <rect x="-5" y="30" width="4" height="15" fill="#f3f4f6"/>
+    <rect x="5" y="30" width="4" height="15" fill="#f3f4f6"/>
+    <!-- Horse mane -->
+    <path d="M -30,5 Q -35,0 -28,8" stroke="#d1d5db" stroke-width="3" fill="none"/>
+    
+    <!-- Knight -->
+    <!-- Helmet -->
+    <circle cx="-5" cy="-10" r="8" fill="#6b7280"/>
+    <rect x="-8" y="-8" width="6" height="4" fill="#1f2937"/>
+    
+    <!-- Body armor -->
+    <rect x="-12" y="-2" width="15" height="20" rx="3" fill="#6b7280"/>
+    
+    <!-- Cup held forward -->
+    <g transform="translate(-20,-5)">
+      <rect x="-4" y="-3" width="8" height="10" rx="3" fill="#fbbf24"/>
+      <ellipse cx="0" cy="-3" rx="4" ry="2" fill="#f59e0b"/>
+    </g>
+    
+    <!-- Reins -->
+    <rect x="-15" y="5" width="8" height="3" rx="1.5" fill="#8b4513"/>
+    
+    <!-- Winged helmet -->
+    <path d="M -12,-12 Q -16,-15 -12,-18 Q -8,-15 -12,-12" fill="#f3f4f6"/>
+    <path d="M 2,-12 Q 6,-15 2,-18 Q -2,-15 2,-12" fill="#f3f4f6"/>
+  </g>
+  
+  <!-- Pyramids in background -->
+  <polygon points="40,160 55,140 70,160" fill="#f59e0b" opacity="0.8"/>
+  <polygon points="140,155 152,138 164,155" fill="#f59e0b" opacity="0.8"/>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">KNIGHT OF CUPS</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">성배 나이트</text>
+</svg>

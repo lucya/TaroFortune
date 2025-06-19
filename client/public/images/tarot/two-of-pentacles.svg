@@ -1,0 +1,52 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Figure juggling -->
+  <g transform="translate(100,140)">
+    <circle cx="0" cy="-20" r="8" fill="#fbbf24"/>
+    <rect x="-8" y="-12" width="16" height="25" rx="3" fill="#dc2626"/>
+    
+    <!-- Arms in juggling motion -->
+    <rect x="-15" y="-8" width="8" height="4" rx="2" fill="#fbbf24" transform="rotate(-30)"/>
+    <rect x="7" y="-8" width="8" height="4" rx="2" fill="#fbbf24" transform="rotate(30)"/>
+  </g>
+  
+  <!-- Two pentacles being juggled -->
+  <g transform="translate(70,100)">
+    <circle cx="0" cy="0" r="12" fill="#fbbf24"/>
+    <polygon points="0,-8 -3,-3 -8,-3 -3,1 -5,6 0,4 5,6 3,1 8,-3 3,-3" fill="#dc2626"/>
+  </g>
+  
+  <g transform="translate(130,120)">
+    <circle cx="0" cy="0" r="12" fill="#fbbf24"/>
+    <polygon points="0,-8 -3,-3 -8,-3 -3,1 -5,6 0,4 5,6 3,1 8,-3 3,-3" fill="#dc2626"/>
+  </g>
+  
+  <!-- Infinity symbol connecting them -->
+  <path d="M 80,110 Q 90,100 100,110 Q 110,120 120,110" stroke="#16a34a" stroke-width="4" fill="none"/>
+  
+  <!-- Ships on rough seas -->
+  <path d="M 10,180 Q 30,175 50,180 Q 70,185 90,180 Q 110,175 130,180 Q 150,185 170,180 Q 180,175 190,180" stroke="#3b82f6" stroke-width="6" fill="none"/>
+  
+  <g transform="translate(40,175)">
+    <path d="M 0,0 Q 5,-2 10,0 L 8,4 L 2,4 Z" fill="#8b4513"/>
+    <rect x="5" y="-8" width="1" height="8" fill="#8b4513"/>
+  </g>
+  
+  <g transform="translate(160,178)">
+    <path d="M 0,0 Q 4,-1 8,0 L 6,3 L 2,3 Z" fill="#8b4513"/>
+    <rect x="4" y="-6" width="1" height="6" fill="#8b4513"/>
+  </g>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">TWO OF PENTACLES</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">펜타클 2</text>
+</svg>

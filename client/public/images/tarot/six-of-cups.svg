@@ -1,0 +1,75 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Child giving cup -->
+  <g transform="translate(80,150)">
+    <circle cx="0" cy="-15" r="5" fill="#fbbf24"/>
+    <rect x="-4" y="-10" width="8" height="15" rx="2" fill="#fbbf24"/>
+    
+    <!-- Cup with flower -->
+    <g transform="translate(8,-8)">
+      <rect x="-2" y="-1" width="4" height="6" rx="1" fill="#fbbf24"/>
+      <circle cx="0" cy="-3" r="2" fill="#dc2626"/>
+    </g>
+  </g>
+  
+  <!-- Adult receiving -->
+  <g transform="translate(120,160)">
+    <circle cx="0" cy="-20" r="6" fill="#fbbf24"/>
+    <rect x="-6" y="-14" width="12" height="20" rx="2" fill="#3b82f6"/>
+    <!-- Kneeling -->
+    <rect x="-4" y="6" width="3" height="8" fill="#fbbf24"/>
+    <rect x="1" y="6" width="3" height="8" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Six cups with flowers -->
+  <g transform="translate(50,120)">
+    <rect x="-2" y="-1" width="4" height="6" rx="1" fill="#fbbf24"/>
+    <circle cx="0" cy="-3" r="2" fill="#fbbf24"/>
+  </g>
+  
+  <g transform="translate(70,115)">
+    <rect x="-2" y="-1" width="4" height="6" rx="1" fill="#fbbf24"/>
+    <circle cx="0" cy="-3" r="2" fill="#8b5cf6"/>
+  </g>
+  
+  <g transform="translate(90,110)">
+    <rect x="-2" y="-1" width="4" height="6" rx="1" fill="#fbbf24"/>
+    <circle cx="0" cy="-3" r="2" fill="#dc2626"/>
+  </g>
+  
+  <g transform="translate(110,115)">
+    <rect x="-2" y="-1" width="4" height="6" rx="1" fill="#fbbf24"/>
+    <circle cx="0" cy="-3" r="2" fill="#f59e0b"/>
+  </g>
+  
+  <g transform="translate(130,120)">
+    <rect x="-2" y="-1" width="4" height="6" rx="1" fill="#fbbf24"/>
+    <circle cx="0" cy="-3" r="2" fill="#16a34a"/>
+  </g>
+  
+  <g transform="translate(150,125)">
+    <rect x="-2" y="-1" width="4" height="6" rx="1" fill="#fbbf24"/>
+    <circle cx="0" cy="-3" r="2" fill="#8b5cf6"/>
+  </g>
+  
+  <!-- Houses in background -->
+  <g transform="translate(40,100)">
+    <rect x="0" y="0" width="8" height="12" fill="#8b4513"/>
+    <polygon points="0,0 4,-6 8,0" fill="#dc2626"/>
+    <rect x="12" y="2" width="8" height="10" fill="#6b7280"/>
+    <polygon points="12,2 16,-4 20,2" fill="#3b82f6"/>
+  </g>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">SIX OF CUPS</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">성배 6</text>
+</svg>

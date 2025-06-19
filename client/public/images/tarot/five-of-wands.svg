@@ -1,0 +1,58 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Five figures in conflict -->
+  <!-- Figure 1 -->
+  <g transform="translate(60,120)">
+    <circle cx="0" cy="-10" r="5" fill="#fbbf24"/>
+    <rect x="-4" y="-5" width="8" height="15" rx="2" fill="#dc2626"/>
+    <rect x="4" y="-8" width="3" height="12" fill="#8b4513" transform="rotate(45)"/>
+  </g>
+  
+  <!-- Figure 2 -->
+  <g transform="translate(140,130)">
+    <circle cx="0" cy="-10" r="5" fill="#fbbf24"/>
+    <rect x="-4" y="-5" width="8" height="15" rx="2" fill="#3b82f6"/>
+    <rect x="-8" y="-6" width="3" height="12" fill="#8b4513" transform="rotate(-30)"/>
+  </g>
+  
+  <!-- Figure 3 -->
+  <g transform="translate(100,140)">
+    <circle cx="0" cy="-10" r="5" fill="#fbbf24"/>
+    <rect x="-4" y="-5" width="8" height="15" rx="2" fill="#16a34a"/>
+    <rect x="0" y="-12" width="3" height="12" fill="#8b4513" transform="rotate(15)"/>
+  </g>
+  
+  <!-- Figure 4 -->
+  <g transform="translate(80,150)">
+    <circle cx="0" cy="-10" r="5" fill="#fbbf24"/>
+    <rect x="-4" y="-5" width="8" height="15" rx="2" fill="#f59e0b"/>
+    <rect x="-6" y="-8" width="3" height="12" fill="#8b4513" transform="rotate(-60)"/>
+  </g>
+  
+  <!-- Figure 5 -->
+  <g transform="translate(120,155)">
+    <circle cx="0" cy="-10" r="5" fill="#fbbf24"/>
+    <rect x="-4" y="-5" width="8" height="15" rx="2" fill="#8b5cf6"/>
+    <rect x="2" y="-6" width="3" height="12" fill="#8b4513" transform="rotate(75)"/>
+  </g>
+  
+  <!-- Wands crossing -->
+  <rect x="85" y="100" width="3" height="20" fill="#8b4513" transform="rotate(30)"/>
+  <rect x="110" y="95" width="3" height="25" fill="#8b4513" transform="rotate(-20)"/>
+  <rect x="95" y="110" width="3" height="18" fill="#8b4513" transform="rotate(60)"/>
+  <rect x="105" y="105" width="3" height="22" fill="#8b4513" transform="rotate(-45)"/>
+  <rect x="100" y="98" width="3" height="20" fill="#8b4513" transform="rotate(10)"/>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">FIVE OF WANDS</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">완드 5</text>
+</svg>

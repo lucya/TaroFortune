@@ -1,0 +1,49 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Blindfolded figure -->
+  <g transform="translate(100,140)">
+    <circle cx="0" cy="-20" r="8" fill="#fbbf24"/>
+    
+    <!-- Blindfold -->
+    <rect x="-8" y="-22" width="16" height="4" fill="#f3f4f6"/>
+    
+    <!-- White robe -->
+    <rect x="-10" y="-12" width="20" height="30" rx="3" fill="#f3f4f6"/>
+    
+    <!-- Arms crossed with swords -->
+    <rect x="-15" y="-5" width="12" height="4" rx="2" fill="#fbbf24"/>
+    <rect x="3" y="-5" width="12" height="4" rx="2" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Two swords crossed -->
+  <rect x="85" y="110" width="3" height="25" fill="#d1d5db" transform="rotate(45)"/>
+  <rect x="112" y="110" width="3" height="25" fill="#d1d5db" transform="rotate(-45)"/>
+  
+  <!-- Sword hilts -->
+  <circle cx="88" cy="125" r="3" fill="#8b4513" transform="rotate(45)"/>
+  <circle cx="112" cy="125" r="3" fill="#8b4513" transform="rotate(-45)"/>
+  
+  <!-- Sea -->
+  <path d="M 10,180 Q 50,175 100,180 Q 150,185 190,180 L 190,220 L 10,220 Z" fill="#3b82f6" opacity="0.6"/>
+  
+  <!-- Rocks in water -->
+  <ellipse cx="40" cy="190" rx="8" ry="4" fill="#6b7280"/>
+  <ellipse cx="160" cy="185" rx="6" ry="3" fill="#6b7280"/>
+  <ellipse cx="120" cy="195" rx="5" ry="3" fill="#6b7280"/>
+  
+  <!-- Crescent moon -->
+  <path d="M 60,60 Q 50,50 60,40 Q 70,50 60,60" fill="#fbbf24"/>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">TWO OF SWORDS</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">검 2</text>
+</svg>

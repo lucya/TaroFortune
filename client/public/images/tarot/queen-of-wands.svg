@@ -1,0 +1,61 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Throne -->
+  <rect x="80" y="150" width="40" height="50" rx="5" fill="#8b4513"/>
+  <rect x="75" y="145" width="50" height="8" rx="5" fill="#a16207"/>
+  
+  <!-- Queen -->
+  <g transform="translate(100,130)">
+    <!-- Crown -->
+    <rect x="-10" y="-35" width="20" height="6" rx="3" fill="#fbbf24"/>
+    <polygon points="-8,-35 -4,-42 0,-35 4,-42 8,-35" fill="#fbbf24"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-25" r="10" fill="#fbbf24"/>
+    
+    <!-- Long hair -->
+    <path d="M -10,-30 Q -12,-15 -8,-5" stroke="#f59e0b" stroke-width="3" fill="none"/>
+    <path d="M 10,-30 Q 12,-15 8,-5" stroke="#f59e0b" stroke-width="3" fill="none"/>
+    
+    <!-- Orange dress -->
+    <rect x="-15" y="-15" width="30" height="45" rx="5" fill="#f59e0b"/>
+    
+    <!-- Wand -->
+    <rect x="-15" y="-5" width="4" height="25" fill="#8b4513"/>
+    <ellipse cx="-13" cy="-7" rx="3" ry="6" fill="#16a34a"/>
+    
+    <!-- Sunflower -->
+    <g transform="translate(12,0)">
+      <circle cx="0" cy="0" r="6" fill="#fbbf24"/>
+      <circle cx="0" cy="0" r="3" fill="#f59e0b"/>
+    </g>
+  </g>
+  
+  <!-- Black cat -->
+  <g transform="translate(130,180)">
+    <ellipse cx="0" cy="0" rx="8" ry="4" fill="#1f2937"/>
+    <circle cx="-4" cy="-2" r="3" fill="#1f2937"/>
+    <circle cx="-6" cy="-3" r="1" fill="#fbbf24"/>
+    <path d="M 8,0 Q 12,-1 10,2" stroke="#1f2937" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Sunflowers -->
+  <g transform="translate(50,200)">
+    <rect x="0" y="0" width="2" height="15" fill="#16a34a"/>
+    <circle cx="1" cy="-3" r="5" fill="#fbbf24"/>
+    <circle cx="1" cy="-3" r="2" fill="#f59e0b"/>
+  </g>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">QUEEN OF WANDS</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">완드 퀸</text>
+</svg>

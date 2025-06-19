@@ -1,0 +1,71 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Divine hand -->
+  <g transform="translate(100,80)">
+    <rect x="-15" y="0" width="30" height="4" rx="2" fill="#fbbf24"/>
+    <circle cx="-12" cy="2" r="3" fill="#fbbf24"/>
+    <circle cx="-4" cy="2" r="3" fill="#fbbf24"/>
+    <circle cx="4" cy="2" r="3" fill="#fbbf24"/>
+    <circle cx="12" cy="2" r="3" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Large golden cup -->
+  <g transform="translate(100,150)">
+    <rect x="-20" y="-20" width="40" height="40" rx="5" fill="#fbbf24"/>
+    <ellipse cx="0" cy="-20" rx="20" ry="8" fill="#f59e0b"/>
+    <rect x="-2" y="-35" width="4" height="15" fill="#8b4513"/>
+    <ellipse cx="0" cy="-35" rx="8" ry="3" fill="#fbbf24"/>
+    <!-- Handles -->
+    <ellipse cx="-25" cy="-10" rx="3" ry="8" stroke="#f59e0b" stroke-width="3" fill="none"/>
+    <ellipse cx="25" cy="-10" rx="3" ry="8" stroke="#f59e0b" stroke-width="3" fill="none"/>
+    <!-- M symbol -->
+    <text x="0" y="0" text-anchor="middle" font-family="serif" font-size="16" fill="#dc2626" font-weight="bold">M</text>
+  </g>
+  
+  <!-- Water overflowing -->
+  <path d="M 80,170 Q 90,175 100,170 Q 110,175 120,170" stroke="#3b82f6" stroke-width="4" fill="none"/>
+  <path d="M 85,175 Q 95,180 105,175 Q 115,180 125,175" stroke="#3b82f6" stroke-width="3" fill="none"/>
+  <path d="M 90,180 Q 100,185 110,180" stroke="#3b82f6" stroke-width="2" fill="none"/>
+  
+  <!-- Five streams -->
+  <rect x="95" y="185" width="2" height="20" fill="#3b82f6"/>
+  <rect x="99" y="185" width="2" height="25" fill="#3b82f6"/>
+  <rect x="103" y="185" width="2" height="20" fill="#3b82f6"/>
+  <rect x="87" y="185" width="2" height="15" fill="#3b82f6"/>
+  <rect x="111" y="185" width="2" height="15" fill="#3b82f6"/>
+  
+  <!-- Lotus petals -->
+  <g transform="translate(100,220)">
+    <ellipse cx="0" cy="-10" rx="15" ry="8" fill="#f8fafc" opacity="0.9"/>
+    <ellipse cx="-8" cy="-5" rx="8" ry="5" fill="#f8fafc" opacity="0.8"/>
+    <ellipse cx="8" cy="-5" rx="8" ry="5" fill="#f8fafc" opacity="0.8"/>
+    <ellipse cx="-12" cy="2" rx="6" ry="4" fill="#f8fafc" opacity="0.7"/>
+    <ellipse cx="12" cy="2" rx="6" ry="4" fill="#f8fafc" opacity="0.7"/>
+    <ellipse cx="0" cy="5" rx="10" ry="6" fill="#f8fafc" opacity="0.6"/>
+  </g>
+  
+  <!-- Dove -->
+  <g transform="translate(100,100)">
+    <ellipse cx="0" cy="0" rx="8" ry="4" fill="#f3f4f6"/>
+    <ellipse cx="-5" cy="-1" rx="3" ry="2" fill="#f3f4f6"/>
+    <circle cx="-6" cy="-2" r="1" fill="#1f2937"/>
+    <path d="M 3,-2 Q 8,-5 10,-1 Q 8,2 3,1" fill="#f3f4f6"/>
+    <path d="M 3,2 Q 8,5 10,1 Q 8,-2 3,-1" fill="#f3f4f6"/>
+    <!-- Wafer in beak -->
+    <circle cx="-8" cy="-2" r="2" fill="#fbbf24"/>
+    <rect x="-9" y="-3" width="2" height="2" fill="#dc2626"/>
+  </g>
+  
+  <!-- Card Title -->
+  <text x="100" y="260" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">ACE OF CUPS</text>
+  <text x="100" y="280" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">성배 에이스</text>
+</svg>

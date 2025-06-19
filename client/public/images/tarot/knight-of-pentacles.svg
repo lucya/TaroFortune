@@ -1,0 +1,51 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Plowed field -->
+  <polygon points="10,180 60,160 120,170 180,155 190,220 10,220" fill="#8b4513" opacity="0.6"/>
+  
+  <!-- Knight on heavy horse -->
+  <g transform="translate(120,160)">
+    <!-- Heavy draft horse -->
+    <ellipse cx="-10" cy="10" rx="25" ry="15" fill="#1f2937"/>
+    <ellipse cx="-25" cy="5" rx="10" ry="12" fill="#1f2937"/>
+    <!-- Horse legs -->
+    <rect x="-30" y="25" width="4" height="15" fill="#1f2937"/>
+    <rect x="-20" y="25" width="4" height="15" fill="#1f2937"/>
+    <rect x="-5" y="25" width="4" height="15" fill="#1f2937"/>
+    <rect x="5" y="25" width="4" height="15" fill="#1f2937"/>
+    
+    <!-- Knight -->
+    <!-- Helmet -->
+    <circle cx="-5" cy="-10" r="6" fill="#6b7280"/>
+    
+    <!-- Armor -->
+    <rect x="-12" y="-2" width="15" height="20" rx="3" fill="#6b7280"/>
+    
+    <!-- Pentacle held carefully -->
+    <g transform="translate(-15,-5)">
+      <circle cx="0" cy="0" r="5" fill="#fbbf24"/>
+      <polygon points="0,-3 -1,-1 -3,-1 -1,1 -2,3 0,2 2,3 1,1 3,-1 1,-1" fill="#dc2626"/>
+    </g>
+    
+    <!-- Reins -->
+    <rect x="-15" y="5" width="8" height="3" rx="1.5" fill="#8b4513"/>
+  </g>
+  
+  <!-- Furrows in field -->
+  <rect x="20" y="190" width="160" height="2" fill="#a16207"/>
+  <rect x="20" y="195" width="160" height="2" fill="#a16207"/>
+  <rect x="20" y="200" width="160" height="2" fill="#a16207"/>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">KNIGHT OF PENTACLES</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">펜타클 나이트</text>
+</svg>

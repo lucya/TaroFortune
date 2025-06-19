@@ -1,0 +1,60 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Windy landscape -->
+  <polygon points="10,180 60,160 120,170 180,155 190,220 10,220" fill="#16a34a" opacity="0.6"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="50" cy="80" rx="20" ry="10" fill="#f3f4f6" opacity="0.7"/>
+  <ellipse cx="150" cy="70" rx="15" ry="8" fill="#f3f4f6" opacity="0.7"/>
+  
+  <!-- Young person -->
+  <g transform="translate(100,140)">
+    <!-- Head -->
+    <circle cx="0" cy="-20" r="8" fill="#fbbf24"/>
+    
+    <!-- Hair blowing -->
+    <path d="M -6,-25 Q -12,-20 -8,-15" stroke="#8b4513" stroke-width="2" fill="none"/>
+    <path d="M 6,-25 Q 12,-20 8,-15" stroke="#8b4513" stroke-width="2" fill="none"/>
+    
+    <!-- Yellow tunic -->
+    <rect x="-10" y="-12" width="20" height="35" rx="4" fill="#fbbf24"/>
+    
+    <!-- Sword held high -->
+    <rect x="8" y="-25" width="3" height="25" fill="#d1d5db"/>
+    <rect x="6" y="0" width="7" height="4" rx="2" fill="#8b4513"/>
+    
+    <!-- Left hand on hip -->
+    <rect x="-15" y="-5" width="8" height="4" rx="2" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Trees bending in wind -->
+  <g transform="translate(50,180)">
+    <rect x="0" y="0" width="3" height="20" fill="#8b4513" transform="rotate(15)"/>
+    <ellipse cx="2" cy="-8" rx="8" ry="5" fill="#16a34a" transform="rotate(15)"/>
+  </g>
+  
+  <g transform="translate(160,175)">
+    <rect x="0" y="0" width="3" height="18" fill="#8b4513" transform="rotate(-20)"/>
+    <ellipse cx="2" cy="-6" rx="6" ry="4" fill="#16a34a" transform="rotate(-20)"/>
+  </g>
+  
+  <!-- Birds in wind -->
+  <g transform="translate(70,100)">
+    <ellipse cx="0" cy="0" rx="4" ry="2" fill="#1f2937"/>
+    <path d="M -2,-1 Q -5,-2 -3,0" fill="#1f2937"/>
+    <path d="M 2,-1 Q 5,-2 3,0" fill="#1f2937"/>
+  </g>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">PAGE OF SWORDS</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">검 페이지</text>
+</svg>

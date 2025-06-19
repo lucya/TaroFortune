@@ -1,0 +1,55 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="40" cy="70" rx="18" ry="9" fill="#f3f4f6" opacity="0.7"/>
+  <ellipse cx="160" cy="80" rx="15" ry="8" fill="#f3f4f6" opacity="0.7"/>
+  
+  <!-- Throne -->
+  <rect x="80" y="150" width="40" height="50" rx="5" fill="#8b4513"/>
+  <rect x="75" y="145" width="50" height="8" rx="5" fill="#a16207"/>
+  
+  <!-- Queen -->
+  <g transform="translate(100,130)">
+    <!-- Crown -->
+    <rect x="-10" y="-35" width="20" height="6" rx="3" fill="#fbbf24"/>
+    <polygon points="-8,-35 -4,-42 0,-35 4,-42 8,-35" fill="#fbbf24"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-25" r="10" fill="#fbbf24"/>
+    
+    <!-- Hair -->
+    <path d="M -10,-30 Q -12,-15 -8,-5" stroke="#f3f4f6" stroke-width="3" fill="none"/>
+    <path d="M 10,-30 Q 12,-15 8,-5" stroke="#f3f4f6" stroke-width="3" fill="none"/>
+    
+    <!-- Blue dress -->
+    <rect x="-15" y="-15" width="30" height="45" rx="5" fill="#3b82f6"/>
+    
+    <!-- Sword upright -->
+    <rect x="12" y="-15" width="3" height="25" fill="#d1d5db"/>
+    <rect x="10" y="10" width="7" height="4" rx="2" fill="#8b4513"/>
+    
+    <!-- Left hand extended -->
+    <rect x="-18" y="-5" width="8" height="4" rx="2" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Bird -->
+  <g transform="translate(50,100)">
+    <ellipse cx="0" cy="0" rx="6" ry="3" fill="#6b7280"/>
+    <circle cx="-3" cy="-1" r="2" fill="#6b7280"/>
+    <circle cx="-4" cy="-2" r="1" fill="#1f2937"/>
+    <path d="M 3,-1 Q 8,-3 10,0 Q 8,2 3,1" fill="#6b7280"/>
+  </g>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">QUEEN OF SWORDS</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">검 퀸</text>
+</svg>

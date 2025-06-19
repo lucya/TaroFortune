@@ -1,0 +1,67 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Divine hand -->
+  <g transform="translate(100,80)">
+    <rect x="-15" y="0" width="30" height="4" rx="2" fill="#fbbf24"/>
+    <circle cx="-12" cy="2" r="3" fill="#fbbf24"/>
+    <circle cx="-4" cy="2" r="3" fill="#fbbf24"/>
+    <circle cx="4" cy="2" r="3" fill="#fbbf24"/>
+    <circle cx="12" cy="2" r="3" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Large wand -->
+  <g transform="translate(100,160)">
+    <rect x="-4" y="-60" width="8" height="80" rx="4" fill="#8b4513"/>
+    <!-- Leaves sprouting -->
+    <ellipse cx="-8" cy="-50" rx="6" ry="4" fill="#16a34a"/>
+    <ellipse cx="8" cy="-45" rx="5" ry="3" fill="#16a34a"/>
+    <ellipse cx="-6" cy="-35" rx="4" ry="3" fill="#16a34a"/>
+    <ellipse cx="10" cy="-30" rx="6" ry="4" fill="#16a34a"/>
+    <ellipse cx="-10" cy="-20" rx="5" ry="3" fill="#16a34a"/>
+    <ellipse cx="7" cy="-15" rx="4" ry="3" fill="#16a34a"/>
+  </g>
+  
+  <!-- Landscape -->
+  <polygon points="10,200 60,180 100,190 140,175 190,185 190,230 10,230" fill="#16a34a" opacity="0.6"/>
+  
+  <!-- Castle in distance -->
+  <g transform="translate(50,180)">
+    <rect x="0" y="0" width="8" height="15" fill="#6b7280"/>
+    <rect x="12" y="-5" width="8" height="20" fill="#6b7280"/>
+    <rect x="24" y="0" width="8" height="15" fill="#6b7280"/>
+    <polygon points="4,0 6,-5 8,0" fill="#dc2626"/>
+    <polygon points="16,-5 18,-10 20,-5" fill="#dc2626"/>
+    <polygon points="28,0 30,-5 32,0" fill="#dc2626"/>
+  </g>
+  
+  <!-- River -->
+  <path d="M 10,210 Q 50,205 100,210 Q 150,215 190,210" stroke="#3b82f6" stroke-width="4" fill="none"/>
+  
+  <!-- Yods (divine sparks) -->
+  <g fill="#fbbf24">
+    <polygon points="70,120 72,115 74,120 72,125" />
+    <polygon points="130,110 132,105 134,110 132,115" />
+    <polygon points="85,130 87,125 89,130 87,135" />
+    <polygon points="115,125 117,120 119,125 117,130" />
+    <polygon points="60,140 62,135 64,140 62,145" />
+    <polygon points="140,135 142,130 144,135 142,140" />
+    <polygon points="75,150 77,145 79,150 77,155" />
+    <polygon points="125,145 127,140 129,145 127,150" />
+  </g>
+  
+  <!-- Mountains -->
+  <polygon points="120,185 140,165 160,170 180,160 190,185" fill="#6b7280" opacity="0.5"/>
+  
+  <!-- Card Title -->
+  <text x="100" y="260" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">ACE OF WANDS</text>
+  <text x="100" y="280" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">완드 에이스</text>
+</svg>

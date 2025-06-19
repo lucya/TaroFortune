@@ -1,0 +1,72 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Cathedral/monastery -->
+  <rect x="80" y="100" width="40" height="60" fill="#6b7280"/>
+  <polygon points="80,100 100,80 120,100" fill="#8b4513"/>
+  
+  <!-- Gothic arches -->
+  <path d="M 85,140 Q 92,130 99,140" stroke="#1f2937" stroke-width="2" fill="none"/>
+  <path d="M 101,140 Q 108,130 115,140" stroke="#1f2937" stroke-width="2" fill="none"/>
+  
+  <!-- Three pentacles in arches -->
+  <g transform="translate(90,125)">
+    <circle cx="0" cy="0" r="6" fill="#fbbf24"/>
+    <polygon points="0,-4 -1,-1 -3,-1 -1,1 -2,3 0,2 2,3 1,1 3,-1 1,-1" fill="#dc2626"/>
+  </g>
+  
+  <g transform="translate(100,110)">
+    <circle cx="0" cy="0" r="6" fill="#fbbf24"/>
+    <polygon points="0,-4 -1,-1 -3,-1 -1,1 -2,3 0,2 2,3 1,1 3,-1 1,-1" fill="#dc2626"/>
+  </g>
+  
+  <g transform="translate(110,125)">
+    <circle cx="0" cy="0" r="6" fill="#fbbf24"/>
+    <polygon points="0,-4 -1,-1 -3,-1 -1,1 -2,3 0,2 2,3 1,1 3,-1 1,-1" fill="#dc2626"/>
+  </g>
+  
+  <!-- Three craftsmen -->
+  <!-- Architect with plans -->
+  <g transform="translate(60,170)">
+    <circle cx="0" cy="-15" r="6" fill="#fbbf24"/>
+    <rect x="-6" y="-9" width="12" height="20" rx="2" fill="#3b82f6"/>
+    <!-- Scroll -->
+    <rect x="8" y="-5" width="6" height="8" rx="1" fill="#f3f4f6"/>
+  </g>
+  
+  <!-- Monk advisor -->
+  <g transform="translate(100,180)">
+    <circle cx="0" cy="-15" r="6" fill="#fbbf24"/>
+    <rect x="-6" y="-9" width="12" height="20" rx="2" fill="#8b4513"/>
+    <!-- Hood -->
+    <path d="M -8,-18 Q -10,-12 -6,-8" stroke="#6b7280" stroke-width="3" fill="none"/>
+    <path d="M 8,-18 Q 10,-12 6,-8" stroke="#6b7280" stroke-width="3" fill="none"/>
+  </g>
+  
+  <!-- Stonemason -->
+  <g transform="translate(140,170)">
+    <circle cx="0" cy="-15" r="6" fill="#fbbf24"/>
+    <rect x="-6" y="-9" width="12" height="20" rx="2" fill="#16a34a"/>
+    <!-- Tools -->
+    <rect x="8" y="-5" width="2" height="10" fill="#8b4513"/>
+    <rect x="10" y="-3" width="4" height="2" fill="#6b7280"/>
+  </g>
+  
+  <!-- Stone blocks -->
+  <rect x="70" y="185" width="8" height="6" fill="#9ca3af"/>
+  <rect x="80" y="190" width="8" height="6" fill="#9ca3af"/>
+  <rect x="120" y="190" width="8" height="6" fill="#9ca3af"/>
+  <rect x="130" y="185" width="8" height="6" fill="#9ca3af"/>
+  
+  <!-- Card Title -->
+  <text x="100" y="230" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">THREE OF PENTACLES</text>
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">펜타클 3</text>
+</svg>

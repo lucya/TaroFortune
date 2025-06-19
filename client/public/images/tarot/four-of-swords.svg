@@ -1,0 +1,47 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Tomb/sarcophagus -->
+  <rect x="70" y="140" width="60" height="20" rx="3" fill="#6b7280"/>
+  <rect x="65" y="135" width="70" height="8" rx="4" fill="#8b4513"/>
+  
+  <!-- Effigy lying on tomb -->
+  <g transform="translate(100,145)">
+    <circle cx="0" cy="-8" r="5" fill="#fbbf24"/>
+    <rect x="-8" y="-3" width="16" height="15" rx="2" fill="#8b4513"/>
+    <!-- Hands in prayer -->
+    <rect x="-3" y="2" width="6" height="4" rx="2" fill="#fbbf24"/>
+  </g>
+  
+  <!-- Sword above effigy -->
+  <rect x="98" y="120" width="3" height="15" fill="#d1d5db"/>
+  <rect x="96" y="118" width="7" height="4" rx="2" fill="#8b4513"/>
+  
+  <!-- Three swords on wall -->
+  <rect x="50" y="100" width="3" height="20" fill="#d1d5db"/>
+  <rect x="48" y="98" width="7" height="4" rx="2" fill="#8b4513"/>
+  
+  <rect x="147" y="100" width="3" height="20" fill="#d1d5db"/>
+  <rect x="145" y="98" width="7" height="4" rx="2" fill="#8b4513"/>
+  
+  <rect x="98" y="95" width="3" height="20" fill="#d1d5db"/>
+  <rect x="96" y="93" width="7" height="4" rx="2" fill="#8b4513"/>
+  
+  <!-- Stained glass window -->
+  <rect x="80" y="60" width="40" height="30" rx="20" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+  <rect x="95" y="70" width="10" height="10" fill="#3b82f6" opacity="0.6"/>
+  <rect x="85" y="75" width="8" height="8" fill="#dc2626" opacity="0.6"/>
+  <rect x="107" y="75" width="8" height="8" fill="#fbbf24" opacity="0.6"/>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">FOUR OF SWORDS</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">검 4</text>
+</svg>

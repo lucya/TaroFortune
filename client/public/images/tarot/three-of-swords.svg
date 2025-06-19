@@ -1,0 +1,43 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Storm clouds -->
+  <ellipse cx="50" cy="60" rx="25" ry="15" fill="#6b7280" opacity="0.8"/>
+  <ellipse cx="120" cy="50" rx="20" ry="12" fill="#6b7280" opacity="0.8"/>
+  <ellipse cx="160" cy="70" rx="18" ry="10" fill="#6b7280" opacity="0.8"/>
+  
+  <!-- Rain -->
+  <rect x="40" y="80" width="1" height="8" fill="#3b82f6"/>
+  <rect x="60" y="75" width="1" height="10" fill="#3b82f6"/>
+  <rect x="80" y="85" width="1" height="6" fill="#3b82f6"/>
+  <rect x="120" y="78" width="1" height="9" fill="#3b82f6"/>
+  <rect x="140" y="82" width="1" height="7" fill="#3b82f6"/>
+  <rect x="160" y="77" width="1" height="11" fill="#3b82f6"/>
+  
+  <!-- Heart -->
+  <g transform="translate(100,140)">
+    <path d="M 0,8 Q -8,0 -12,-8 Q -16,-16 -8,-16 Q 0,-12 0,-4 Q 0,-12 8,-16 Q 16,-16 12,-8 Q 8,0 0,8" fill="#dc2626"/>
+  </g>
+  
+  <!-- Three swords piercing heart -->
+  <rect x="97" y="110" width="3" height="30" fill="#d1d5db"/>
+  <rect x="91" y="115" width="3" height="25" fill="#d1d5db" transform="rotate(-15)"/>
+  <rect x="106" y="115" width="3" height="25" fill="#d1d5db" transform="rotate(15)"/>
+  
+  <!-- Sword hilts -->
+  <rect x="96" y="108" width="5" height="4" rx="1" fill="#8b4513"/>
+  <rect x="90" y="113" width="5" height="4" rx="1" fill="#8b4513" transform="rotate(-15)"/>
+  <rect x="105" y="113" width="5" height="4" rx="1" fill="#8b4513" transform="rotate(15)"/>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">THREE OF SWORDS</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">검 3</text>
+</svg>
