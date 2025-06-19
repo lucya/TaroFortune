@@ -1,0 +1,78 @@
+<svg width="200" height="300" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c1d95;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect width="200" height="300" rx="15" fill="url(#cardBg)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <!-- Pillars -->
+  <rect x="30" y="50" width="8" height="120" fill="#6b7280"/>
+  <rect x="162" y="50" width="8" height="120" fill="#6b7280"/>
+  
+  <!-- Throne -->
+  <rect x="70" y="140" width="60" height="40" rx="5" fill="#8b4513"/>
+  <rect x="75" y="135" width="50" height="10" rx="2" fill="#a16207"/>
+  
+  <!-- Justice figure -->
+  <g transform="translate(100,120)">
+    <!-- Crown -->
+    <rect x="-8" y="-35" width="16" height="6" rx="3" fill="#fbbf24"/>
+    <polygon points="-6,-35 0,-42 6,-35" fill="#fbbf24"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-25" r="10" fill="#fbbf24"/>
+    
+    <!-- Hair -->
+    <path d="M -10,-30 Q -12,-20 -8,-15" stroke="#8b4513" stroke-width="2" fill="none"/>
+    <path d="M 10,-30 Q 12,-20 8,-15" stroke="#8b4513" stroke-width="2" fill="none"/>
+    
+    <!-- Red robe -->
+    <rect x="-15" y="-15" width="30" height="50" rx="5" fill="#dc2626"/>
+    
+    <!-- Green mantle -->
+    <path d="M -18,-10 Q -20,0 -15,10 L -10,15 L -15,25 Q -20,35 -15,45 L 15,45 Q 20,35 15,25 L 10,15 L 15,10 Q 20,0 18,-10 Z" fill="#16a34a"/>
+    
+    <!-- Left arm with scales -->
+    <rect x="-25" y="-5" width="12" height="4" rx="2" fill="#fbbf24"/>
+    
+    <!-- Scales -->
+    <g transform="translate(-20,0)">
+      <!-- Scale bar -->
+      <rect x="-8" y="-1" width="16" height="2" fill="#8b4513"/>
+      <!-- Left pan -->
+      <rect x="-12" y="2" width="8" height="2" rx="1" fill="#fbbf24"/>
+      <!-- Right pan -->
+      <rect x="4" y="0" width="8" height="2" rx="1" fill="#fbbf24"/>
+      <!-- Chains -->
+      <rect x="-8" y="0" width="1" height="4" fill="#6b7280"/>
+      <rect x="8" y="0" width="1" height="2" fill="#6b7280"/>
+    </g>
+    
+    <!-- Right arm with sword -->
+    <rect x="13" y="-8" width="12" height="4" rx="2" fill="#fbbf24"/>
+    
+    <!-- Sword -->
+    <g transform="translate(22,-5)">
+      <!-- Blade -->
+      <rect x="-1" y="-15" width="2" height="25" fill="#d1d5db"/>
+      <!-- Hilt -->
+      <rect x="-3" y="10" width="6" height="4" rx="1" fill="#8b4513"/>
+      <!-- Crossguard -->
+      <rect x="-4" y="8" width="8" height="2" fill="#6b7280"/>
+    </g>
+  </g>
+  
+  <!-- Curtain/backdrop -->
+  <rect x="40" y="45" width="120" height="8" fill="#8b5cf6"/>
+  
+  <!-- Card Title -->
+  <text x="100" y="250" text-anchor="middle" font-family="serif" font-size="14" fill="#e5e7eb" font-weight="bold">JUSTICE</text>
+  <text x="100" y="270" text-anchor="middle" font-family="serif" font-size="12" fill="#d1d5db">정의</text>
+  
+  <!-- Card Number -->
+  <text x="20" y="40" font-family="serif" font-size="18" fill="#fbbf24" font-weight="bold">XI</text>
+</svg>
