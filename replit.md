@@ -83,10 +83,13 @@ The build process:
 2. Backend builds to `dist` using esbuild
 3. Static files are served from the Express server in production
 
-## Changelog
+## Recent Changes
 
-Changelog:
-- June 16, 2025. Initial setup
+- June 20, 2025: Enhanced tarot interpretations with deeply emotional and captivating readings
+- June 20, 2025: Added comprehensive card descriptions using professional tarot encyclopedia
+- June 20, 2025: Created complete 56-card tarot deck with custom SVG imagery
+- June 20, 2025: Added close button to card detail modal for better UX
+- June 16, 2025: Initial setup
 
 ## User Preferences
 
