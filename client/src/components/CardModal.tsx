@@ -134,6 +134,16 @@ export default function CardModal({ card, isOpen, onClose }: CardModalProps) {
                   <p className="text-purple-100 text-sm leading-relaxed">{card.description}</p>
                 </div>
               )}
+              
+              {/* Close Button */}
+              <div className="flex justify-center pt-4">
+                <button
+                  onClick={onClose}
+                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25"
+                >
+                  <i className="fas fa-times mr-2"></i>닫기
+                </button>
+              </div>
             </div>
           </motion.div>
         </motion.div>
