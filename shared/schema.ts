@@ -1,4 +1,11 @@
-import { pgTable, text, serial, integer, timestamp, json } from "drizzle-orm/pg-core";
+import {
+  pgTable,
+  text,
+  serial,
+  integer,
+  timestamp,
+  json,
+} from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
@@ -23,7 +30,7 @@ export interface TarotCard {
   id: number;
   name: string;
   englishName: string;
-  type: "메이저 아르카나" | "마이너 아르카나";
+  type: string;
   keywords: string[];
   love: string;
   relationship: string;

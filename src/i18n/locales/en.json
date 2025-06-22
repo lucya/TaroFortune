@@ -1,0 +1,46 @@
+{
+  "home": {
+    "title": "Mystical Tarot Fortune",
+    "subtitle": "Three tarot cards will reveal your past, present, and future.",
+    "description": "Clear your mind and select your cards",
+    "drawCards": "Draw Your Destiny Cards",
+    "drawInstruction": "Think of your question and click the button below",
+    "drawButton": "Draw 3 Cards",
+    "drawingCards": "Drawing cards...",
+    "drawAgain": "Draw Again",
+    "destiny": "Your Destiny Unfolds"
+  },
+  "positions": {
+    "past": "Past",
+    "present": "Present",
+    "future": "Future"
+  },
+  "card": {
+    "seeDetails": "See Details",
+    "keywords": "Key Words",
+    "closeModal": "Close",
+    "love": "Love Fortune",
+    "relationship": "Relationship Fortune",
+    "money": "Money Fortune",
+    "career": "Career Fortune",
+    "advice": "Advice Message",
+    "warning": "Warning",
+    "description": "Card Description"
+  },
+  "reading": {
+    "title": "Tarot Reading",
+    "overallTitle": "Overall Fortune",
+    "pastCardMeaning": "The {cardName} from your past whispers to you. The experience of {keywords} has taken root deep in your soul.",
+    "presentCardMeaning": "The current {cardName} reflects your present situation. You are now in the powerful energy of {keywords}.",
+    "futureCardMeaning": "The future {cardName} promises you. The energy of {keywords} will brightly illuminate your future."
+  },
+  "languages": {
+    "korean": "한국어",
+    "english": "English"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry"
+  }
+}

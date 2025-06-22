@@ -1,0 +1,46 @@
+{
+  "home": {
+    "title": "신비로운 타로 운세",
+    "subtitle": "3장의 타로카드가 당신의 과거, 현재, 미래를 말해드립니다.",
+    "description": "마음을 비우고 카드를 선택해보세요",
+    "drawCards": "운명의 카드를 뽑아보세요",
+    "drawInstruction": "마음 속 질문을 떠올리며 아래 버튼을 클릭하세요",
+    "drawButton": "3장의 카드 뽑기",
+    "drawingCards": "카드를 뽑는 중...",
+    "drawAgain": "다시 뽑기",
+    "destiny": "당신의 운명이 펼쳐집니다"
+  },
+  "positions": {
+    "past": "과거",
+    "present": "현재",
+    "future": "미래"
+  },
+  "card": {
+    "seeDetails": "자세히 보기",
+    "keywords": "핵심 키워드",
+    "closeModal": "닫기",
+    "love": "애정운",
+    "relationship": "관계운",
+    "money": "금전운",
+    "career": "직업/사업운",
+    "advice": "조언의 메시지",
+    "warning": "주의할 점",
+    "description": "카드 설명"
+  },
+  "reading": {
+    "title": "타로 해석",
+    "overallTitle": "종합 운세",
+    "pastCardMeaning": "과거의 {cardName}이 당신에게 속삭입니다. {keywords}의 경험이 당신의 영혼 깊숙이 뿌리내렸습니다.",
+    "presentCardMeaning": "현재의 {cardName}이 당신의 현재 상황을 비춰주고 있습니다. 지금 당신은 {keywords}의 강력한 에너지 속에 있습니다.",
+    "futureCardMeaning": "미래의 {cardName}이 당신에게 약속하고 있습니다. {keywords}의 에너지가 당신의 앞날을 밝게 비출 것입니다."
+  },
+  "languages": {
+    "korean": "한국어",
+    "english": "English"
+  },
+  "common": {
+    "loading": "로딩중...",
+    "error": "오류가 발생했습니다",
+    "retry": "다시 시도"
+  }
+}
