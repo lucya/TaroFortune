@@ -1028,7 +1028,7 @@ export const tarotCardsKo: TarotCard[] = [
     advice: "어려울 때는 도움을 요청하고 희망을 잃지 마세요.",
     warning: "자존심 때문에 필요한 도움을 거부하지 마세요.",
     description: "펜타클 5는 물질적 어려움과 회복의 필요성을 상징합니다.",
-    imageUrl: "/images/tarot/five-of-cups.svg",
+    imageUrl: "/images/tarot/five-of-pentacles.svg",
   },
   {
     id: 69,
@@ -1042,7 +1042,7 @@ export const tarotCardsKo: TarotCard[] = [
     advice: "관대함과 나눔의 정신으로 더 큰 풍요를 얻으세요.",
     warning: "무분별한 베풂은 자신에게 해가 될 수 있습니다.",
     description: "펜타클 6은 관대함과 균형 잡힌 나눔을 상징합니다.",
-    imageUrl: "/images/tarot/six-of-cups.svg",
+    imageUrl: "/images/tarot/six-of-pentacles.svg",
   },
   {
     id: 70,
@@ -1056,7 +1056,7 @@ export const tarotCardsKo: TarotCard[] = [
     advice: "성급하게 결과를 요구하지 말고 인내심을 가지세요.",
     warning: "너무 오래 기다리기만 하지 말고 적절한 행동도 취하세요.",
     description: "펜타클 7은 인내심과 장기적 관점을 상징합니다.",
-    imageUrl: "/images/tarot/seven-of-cups.svg",
+    imageUrl: "/images/tarot/seven-of-pentacles.svg",
   },
   {
     id: 71,
@@ -1070,7 +1070,7 @@ export const tarotCardsKo: TarotCard[] = [
     advice: "꾸준한 노력과 집중으로 목표를 달성하세요.",
     warning: "과로하지 말고 적절한 휴식도 취하세요.",
     description: "펜타클 8은 꾸준한 노력과 기술 향상을 상징합니다.",
-    imageUrl: "/images/tarot/eight-of-cups.svg",
+    imageUrl: "/images/tarot/eight-of-pentacles.svg",
   },
   {
     id: 72,
@@ -1084,7 +1084,7 @@ export const tarotCardsKo: TarotCard[] = [
     advice: "성취를 즐기되 계속해서 성장하세요.",
     warning: "성공에 안주하지 말고 다른 사람들도 도우세요.",
     description: "펜타클 9는 개인적 성취와 재정적 독립을 상징합니다.",
-    imageUrl: "/images/tarot/nine-of-cups.svg",
+    imageUrl: "/images/tarot/nine-of-pentacles.svg",
   },
   {
     id: 73,
@@ -1098,7 +1098,7 @@ export const tarotCardsKo: TarotCard[] = [
     advice: "개인의 성공을 가족과 나누고 다음 세대를 생각하세요.",
     warning: "가족의 기대에만 매이지 말고 개인의 꿈도 추구하세요.",
     description: "펜타클 10은 가족의 번영과 세대를 이은 안정을 상징합니다.",
-    imageUrl: "/images/tarot/ten-of-cups.svg",
+    imageUrl: "/images/tarot/ten-of-pentacles.svg",
   },
   {
     id: 74,

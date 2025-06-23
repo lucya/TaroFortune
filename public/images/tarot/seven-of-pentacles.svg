@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="600" fill="#1a1a2e" stroke="#4a4a68" stroke-width="4"/>
+  
+  <!-- Title -->
+  <text x="200" y="40" text-anchor="middle" fill="#d4af37" font-family="serif" font-size="22" font-weight="bold">SEVEN OF PENTACLES</text>
+  
+  <!-- Seven Pentacles arranged as a growing plant/tree -->
+  <!-- Root/base pentacles -->
+  <g transform="translate(170, 500)">
+    <polygon points="30,5 36,19 52,19 40,29 45,44 30,34 15,44 20,29 8,19 24,19" fill="#d4af37" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="30" cy="25" r="12" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  
+  <!-- Growing pentacles in a plant pattern -->
+  <g transform="translate(120, 420)">
+    <polygon points="25,5 30,16 43,16 34,24 37,36 25,29 13,36 16,24 7,16 20,16" fill="#d4af37" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="25" cy="21" r="10" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  <g transform="translate(220, 420)">
+    <polygon points="25,5 30,16 43,16 34,24 37,36 25,29 13,36 16,24 7,16 20,16" fill="#d4af37" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="25" cy="21" r="10" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  
+  <!-- Middle level -->
+  <g transform="translate(140, 340)">
+    <polygon points="25,5 30,16 43,16 34,24 37,36 25,29 13,36 16,24 7,16 20,16" fill="#d4af37" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="25" cy="21" r="10" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  <g transform="translate(200, 340)">
+    <polygon points="25,5 30,16 43,16 34,24 37,36 25,29 13,36 16,24 7,16 20,16" fill="#d4af37" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="25" cy="21" r="10" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  
+  <!-- Upper level -->
+  <g transform="translate(160, 260)">
+    <polygon points="25,5 30,16 43,16 34,24 37,36 25,29 13,36 16,24 7,16 20,16" fill="#d4af37" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="25" cy="21" r="10" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  
+  <!-- Top pentacle -->
+  <g transform="translate(175, 180)">
+    <polygon points="25,5 30,16 43,16 34,24 37,36 25,29 13,36 16,24 7,16 20,16" fill="#d4af37" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="25" cy="21" r="10" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  
+  <!-- Plant stems connecting the pentacles -->
+  <path d="M 200 525 Q 200 480 170 460 Q 150 445 145 365 Q 145 340 165 285 Q 175 260 200 205" 
+        stroke="#228b22" stroke-width="3" fill="none"/>
+  <path d="M 200 525 Q 220 480 245 440 Q 250 420 245 365" 
+        stroke="#228b22" stroke-width="2" fill="none"/>
+  <path d="M 200 525 Q 180 480 145 440 Q 140 420 145 365" 
+        stroke="#228b22" stroke-width="2" fill="none"/>
+  
+  <!-- Leaves -->
+  <ellipse cx="160" cy="300" rx="8" ry="15" fill="#32cd32" stroke="#228b22" stroke-width="1" transform="rotate(-30 160 300)"/>
+  <ellipse cx="220" cy="380" rx="8" ry="15" fill="#32cd32" stroke="#228b22" stroke-width="1" transform="rotate(45 220 380)"/>
+  <ellipse cx="130" cy="380" rx="8" ry="15" fill="#32cd32" stroke="#228b22" stroke-width="1" transform="rotate(-45 130 380)"/>
+  
+  <!-- Figure contemplating the harvest -->
+  <g transform="translate(320, 450)">
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="15" fill="#8b7355" stroke="#d4af37" stroke-width="2"/>
+    <!-- Body -->
+    <rect x="-8" y="-15" width="16" height="35" fill="#4a4a68" stroke="#8b7355" stroke-width="2"/>
+    <!-- Arms -->
+    <line x1="-8" y1="-5" x2="-20" y2="5" stroke="#8b7355" stroke-width="3"/>
+    <line x1="8" y1="-5" x2="20" y2="5" stroke="#8b7355" stroke-width="3"/>
+    <!-- Legs -->
+    <line x1="-4" y1="20" x2="-8" y2="40" stroke="#8b7355" stroke-width="3"/>
+    <line x1="4" y1="20" x2="8" y2="40" stroke="#8b7355" stroke-width="3"/>
+    
+    <!-- Tool (hoe) -->
+    <line x1="15" y1="5" x2="10" y2="-15" stroke="#8b4513" stroke-width="3"/>
+    <line x1="8" y1="-15" x2="12" y2="-15" stroke="#8b4513" stroke-width="4"/>
+  </g>
+  
+  <!-- Decorative border -->
+  <rect x="20" y="20" width="360" height="560" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.5"/>
+</svg> 

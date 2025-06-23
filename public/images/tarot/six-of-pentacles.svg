@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="600" viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="600" fill="#1a1a2e" stroke="#4a4a68" stroke-width="4"/>
+  
+  <!-- Title -->
+  <text x="200" y="40" text-anchor="middle" fill="#d4af37" font-family="serif" font-size="24" font-weight="bold">SIX OF PENTACLES</text>
+  
+  <!-- Six Pentacles arranged in two columns -->
+  <!-- Left column -->
+  <g transform="translate(120, 120)">
+    <polygon points="30,5 36,19 52,19 40,29 45,44 30,34 15,44 20,29 8,19 24,19" fill="#d4af37" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="30" cy="25" r="12" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  <g transform="translate(120, 220)">
+    <polygon points="30,5 36,19 52,19 40,29 45,44 30,34 15,44 20,29 8,19 24,19" fill="#d4af37" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="30" cy="25" r="12" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  <g transform="translate(120, 320)">
+    <polygon points="30,5 36,19 52,19 40,29 45,44 30,34 15,44 20,29 8,19 24,19" fill="#d4af37" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="30" cy="25" r="12" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  
+  <!-- Right column -->
+  <g transform="translate(250, 120)">
+    <polygon points="30,5 36,19 52,19 40,29 45,44 30,34 15,44 20,29 8,19 24,19" fill="#d4af37" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="30" cy="25" r="12" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  <g transform="translate(250, 220)">
+    <polygon points="30,5 36,19 52,19 40,29 45,44 30,34 15,44 20,29 8,19 24,19" fill="#d4af37" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="30" cy="25" r="12" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  <g transform="translate(250, 320)">
+    <polygon points="30,5 36,19 52,19 40,29 45,44 30,34 15,44 20,29 8,19 24,19" fill="#d4af37" stroke="#ffd700" stroke-width="2"/>
+    <circle cx="30" cy="25" r="12" fill="none" stroke="#d4af37" stroke-width="2"/>
+  </g>
+  
+  <!-- Central imagery representing giving and receiving -->
+  <g transform="translate(200, 450)">
+    <!-- Merchant or giver figure -->
+    <circle cx="-30" cy="-20" r="12" fill="#8b7355" stroke="#d4af37" stroke-width="2"/>
+    <rect x="-38" y="-8" width="16" height="30" fill="#4a4a68" stroke="#8b7355" stroke-width="2"/>
+    
+    <!-- Receiver figure -->
+    <circle cx="30" cy="-10" r="10" fill="#6b5b73" stroke="#8b7355" stroke-width="2"/>
+    <rect x="24" y="2" width="12" height="25" fill="#4a4a68" stroke="#6b5b73" stroke-width="2"/>
+    
+    <!-- Coins being given -->
+    <circle cx="-5" cy="-15" r="4" fill="#d4af37" stroke="#ffd700" stroke-width="1"/>
+    <circle cx="5" cy="-10" r="3" fill="#d4af37" stroke="#ffd700" stroke-width="1"/>
+    
+    <!-- Balance scales -->
+    <line x1="-60" y1="-40" x2="60" y2="-40" stroke="#8b7355" stroke-width="3"/>
+    <line x1="0" y1="-60" x2="0" y2="-40" stroke="#8b7355" stroke-width="3"/>
+    
+    <!-- Scale pans -->
+    <ellipse cx="-40" cy="-35" rx="15" ry="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+    <ellipse cx="40" cy="-35" rx="15" ry="5" fill="none" stroke="#8b7355" stroke-width="2"/>
+  </g>
+  
+  <!-- Decorative elements suggesting abundance and fairness -->
+  <circle cx="80" cy="500" r="3" fill="#d4af37" opacity="0.6"/>
+  <circle cx="320" cy="480" r="3" fill="#d4af37" opacity="0.6"/>
+  <circle cx="150" cy="520" r="2" fill="#ffd700" opacity="0.6"/>
+  <circle cx="270" cy="510" r="2" fill="#ffd700" opacity="0.6"/>
+  
+  <!-- Decorative border -->
+  <rect x="20" y="20" width="360" height="560" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.5"/>
+</svg> 
