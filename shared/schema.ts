@@ -17,19 +17,15 @@ export const tarotReadings = pgTable("tarot_readings", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
-export const insertTarotReadingSchema = createInsertSchema(tarotReadings).pick({
-  cards: true,
-  interpretation: true,
-  readingType: true,
-});
+export const insertTarotReadingSchema = createInsertSchema(tarotReadings);
 
 export type InsertTarotReading = z.infer<typeof insertTarotReadingSchema>;
-export type TarotReading = typeof tarotReadings.$inferSelect;
+
+export type SelectTarotReading = typeof tarotReadings.$inferSelect;
 
 export interface TarotCard {
   id: number;
   name: string;
-  englishName: string;
   type: string;
   keywords: string[];
   love: string;

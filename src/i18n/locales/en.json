@@ -30,6 +30,7 @@
   "reading": {
     "title": "Tarot Reading",
     "overallTitle": "Overall Fortune",
+    "drawAgain": "Draw Again",
     "pastCardMeaning": "The {cardName} from your past whispers to you. The experience of {keywords} has taken root deep in your soul.",
     "presentCardMeaning": "The current {cardName} reflects your present situation. You are now in the powerful energy of {keywords}.",
     "futureCardMeaning": "The future {cardName} promises you. The energy of {keywords} will brightly illuminate your future."

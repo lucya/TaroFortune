@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import type { TarotCard } from "@shared/schema";
+import { getLocalizedCard, type Language } from "@/data";
 
 interface CardModalProps {
   card: TarotCard | null;
@@ -13,54 +14,46 @@ export default function CardModal({ card, isOpen, onClose }: CardModalProps) {
 
   if (!card) return null;
 
-  // 현재 언어에 따라 카드 이름 결정
-  const getCardName = () => {
-    return i18n.language === "en" ? card.englishName : card.name;
-  };
-
-  const getSubCardName = () => {
-    return i18n.language === "en" ? card.name : card.englishName;
-  };
+  // 현재 언어에 따라 카드 데이터 가져오기
+  const localizedCard =
+    getLocalizedCard(card.id, i18n.language as Language) || card;
 
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-          onClick={onClose}>
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
           <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.8, opacity: 0 }}
-            className="bg-gradient-to-br from-purple-900 to-indigo-900 rounded-3xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-purple-600/50 shadow-2xl"
-            onClick={(e) => e.stopPropagation()}>
-            <div className="flex justify-between items-center mb-6">
-              <div>
-                <h3 className="font-serif text-2xl font-bold text-purple-200">
-                  {getCardName()}
-                </h3>
-                <p className="text-purple-300 text-sm mt-1">
-                  {getSubCardName()}
-                </p>
-              </div>
-              <button
-                onClick={onClose}
-                className="text-purple-300 hover:text-white text-2xl transition-colors duration-200">
-                <i className="fas fa-times"></i>
-              </button>
+            initial={{ opacity: 0, scale: 0.8, y: 50 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.8, y: 50 }}
+            transition={{ duration: 0.3 }}
+            className="relative bg-gradient-to-br from-purple-900 to-indigo-900 rounded-3xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-purple-600/30 shadow-2xl">
+            {/* Close Button */}
+            <button
+              onClick={onClose}
+              className="absolute top-4 right-4 text-purple-300 hover:text-white transition-colors duration-200 z-10">
+              <i className="fas fa-times text-2xl"></i>
+            </button>
+
+            {/* Card Header */}
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="font-serif text-3xl font-bold text-purple-200 mb-2">
+                {localizedCard.name}
+              </motion.h2>
             </div>
 
             <div className="space-y-6">
               {/* Card Image */}
               <div className="bg-gradient-to-br from-purple-700 to-purple-800 rounded-xl p-6 border border-purple-500/30 text-center">
                 <div className="w-48 h-72 mx-auto bg-gradient-to-br from-purple-600 to-indigo-700 rounded-lg flex items-center justify-center mb-4 overflow-hidden">
-                  {card.imageUrl ? (
+                  {localizedCard.imageUrl ? (
                     <img
-                      src={card.imageUrl}
-                      alt={getCardName()}
+                      src={localizedCard.imageUrl}
+                      alt={localizedCard.name}
                       className="w-full h-full object-contain rounded-lg"
                       style={{
                         filter: "drop-shadow(0 0 15px rgba(139, 92, 246, 0.7))",
@@ -76,7 +69,7 @@ export default function CardModal({ card, isOpen, onClose }: CardModalProps) {
                   )}
                 </div>
                 <span className="bg-purple-600/50 text-purple-100 px-3 py-1 rounded-full text-sm">
-                  {card.type}
+                  {localizedCard.type}
                 </span>
               </div>
 
@@ -87,7 +80,7 @@ export default function CardModal({ card, isOpen, onClose }: CardModalProps) {
                   {t("card.keywords")}
                 </h4>
                 <div className="flex flex-wrap gap-2">
-                  {card.keywords.map((keyword, i) => (
+                  {localizedCard.keywords.map((keyword, i) => (
                     <span
                       key={i}
                       className="bg-purple-600/40 text-purple-100 px-3 py-1 rounded-full text-sm">
@@ -97,98 +90,99 @@ export default function CardModal({ card, isOpen, onClose }: CardModalProps) {
                 </div>
               </div>
 
-              {/* Detailed Information */}
-              <div className="grid gap-4">
-                <div className="bg-purple-800/40 rounded-lg p-4">
-                  <h5 className="font-semibold text-purple-300 mb-2 flex items-center">
-                    <i className="fas fa-heart text-red-400 mr-2"></i>
-                    {t("card.love")}
-                  </h5>
-                  <p className="text-purple-100 text-sm leading-relaxed">
-                    {card.love}
-                  </p>
-                </div>
+              {/* Love Fortune */}
+              <div className="bg-purple-800/40 rounded-lg p-4">
+                <h4 className="font-serif text-lg font-bold text-purple-200 mb-3 flex items-center">
+                  <i className="fas fa-heart mr-2 text-pink-400"></i>
+                  {t("card.love")}
+                </h4>
+                <p className="text-purple-100 leading-relaxed">
+                  {localizedCard.love}
+                </p>
+              </div>
 
-                <div className="bg-purple-800/40 rounded-lg p-4">
-                  <h5 className="font-semibold text-purple-300 mb-2 flex items-center">
-                    <i className="fas fa-users text-blue-400 mr-2"></i>
-                    {t("card.relationship")}
-                  </h5>
-                  <p className="text-purple-100 text-sm leading-relaxed">
-                    {card.relationship}
-                  </p>
-                </div>
+              {/* Relationship Fortune */}
+              <div className="bg-purple-800/40 rounded-lg p-4">
+                <h4 className="font-serif text-lg font-bold text-purple-200 mb-3 flex items-center">
+                  <i className="fas fa-users mr-2 text-blue-400"></i>
+                  {t("card.relationship")}
+                </h4>
+                <p className="text-purple-100 leading-relaxed">
+                  {localizedCard.relationship}
+                </p>
+              </div>
 
-                <div className="bg-purple-800/40 rounded-lg p-4">
-                  <h5 className="font-semibold text-purple-300 mb-2 flex items-center">
-                    <i className="fas fa-coins text-yellow-400 mr-2"></i>
-                    {t("card.money")}
-                  </h5>
-                  <p className="text-purple-100 text-sm leading-relaxed">
-                    {card.money}
-                  </p>
-                </div>
+              {/* Money Fortune */}
+              <div className="bg-purple-800/40 rounded-lg p-4">
+                <h4 className="font-serif text-lg font-bold text-purple-200 mb-3 flex items-center">
+                  <i className="fas fa-coins mr-2 text-yellow-400"></i>
+                  {t("card.money")}
+                </h4>
+                <p className="text-purple-100 leading-relaxed">
+                  {localizedCard.money}
+                </p>
+              </div>
 
-                <div className="bg-purple-800/40 rounded-lg p-4">
-                  <h5 className="font-semibold text-purple-300 mb-2 flex items-center">
-                    <i className="fas fa-briefcase text-green-400 mr-2"></i>
-                    {t("card.career")}
-                  </h5>
-                  <p className="text-purple-100 text-sm leading-relaxed">
-                    {card.career}
-                  </p>
-                </div>
+              {/* Career Fortune */}
+              <div className="bg-purple-800/40 rounded-lg p-4">
+                <h4 className="font-serif text-lg font-bold text-purple-200 mb-3 flex items-center">
+                  <i className="fas fa-briefcase mr-2 text-green-400"></i>
+                  {t("card.career")}
+                </h4>
+                <p className="text-purple-100 leading-relaxed">
+                  {localizedCard.career}
+                </p>
               </div>
 
               {/* Advice */}
-              <div className="bg-gradient-to-r from-purple-600/20 to-purple-500/20 rounded-lg p-4">
-                <h5 className="font-semibold text-purple-200 mb-2 flex items-center">
-                  <i className="fas fa-lightbulb text-yellow-300 mr-2"></i>
+              <div className="bg-purple-800/40 rounded-lg p-4">
+                <h4 className="font-serif text-lg font-bold text-purple-200 mb-3 flex items-center">
+                  <i className="fas fa-lightbulb mr-2 text-orange-400"></i>
                   {t("card.advice")}
-                </h5>
-                <p className="text-purple-100 text-sm leading-relaxed">
-                  {card.advice}
+                </h4>
+                <p className="text-purple-100 leading-relaxed">
+                  {localizedCard.advice}
                 </p>
               </div>
 
               {/* Warning */}
-              {card.warning && (
-                <div className="bg-gradient-to-r from-red-900/20 to-orange-900/20 rounded-lg p-4 border border-red-500/20">
-                  <h5 className="font-semibold text-red-300 mb-2 flex items-center">
-                    <i className="fas fa-exclamation-triangle text-red-400 mr-2"></i>
+              {localizedCard.warning && (
+                <div className="bg-orange-900/40 rounded-lg p-4 border border-orange-600/30">
+                  <h4 className="font-serif text-lg font-bold text-orange-200 mb-3 flex items-center">
+                    <i className="fas fa-exclamation-triangle mr-2 text-orange-400"></i>
                     {t("card.warning")}
-                  </h5>
-                  <p className="text-red-100 text-sm leading-relaxed">
-                    {card.warning}
+                  </h4>
+                  <p className="text-orange-100 leading-relaxed">
+                    {localizedCard.warning}
                   </p>
                 </div>
               )}
 
               {/* Description */}
-              {card.description && (
-                <div className="bg-purple-800/30 rounded-lg p-4">
-                  <h5 className="font-semibold text-purple-300 mb-2 flex items-center">
-                    <i className="fas fa-scroll text-purple-400 mr-2"></i>
+              {localizedCard.description && (
+                <div className="bg-purple-800/40 rounded-lg p-4">
+                  <h4 className="font-serif text-lg font-bold text-purple-200 mb-3 flex items-center">
+                    <i className="fas fa-book mr-2 text-purple-300"></i>
                     {t("card.description")}
-                  </h5>
-                  <p className="text-purple-100 text-sm leading-relaxed">
-                    {card.description}
+                  </h4>
+                  <p className="text-purple-100 leading-relaxed">
+                    {localizedCard.description}
                   </p>
                 </div>
               )}
+            </div>
 
-              {/* Close Button */}
-              <div className="flex justify-center pt-4">
-                <button
-                  onClick={onClose}
-                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25">
-                  <i className="fas fa-times mr-2"></i>
-                  {t("card.closeModal")}
-                </button>
-              </div>
+            {/* Close Button at Bottom */}
+            <div className="text-center mt-8">
+              <button
+                onClick={onClose}
+                className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg border border-purple-400/50">
+                <i className="fas fa-times mr-2"></i>
+                {t("card.closeModal")}
+              </button>
             </div>
           </motion.div>
-        </motion.div>
+        </div>
       )}
     </AnimatePresence>
   );

@@ -1,33 +1,41 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import type { TarotCard } from "@shared/schema";
+import { getLocalizedCard, type Language } from "@/data";
+
+// Position 타입 및 설정 정의
+export type PositionKey = "past" | "present" | "future";
+
+interface PositionConfig {
+  icon: string;
+  color: string;
+  translationKey: string;
+}
+
+export const POSITION_CONFIG: Record<PositionKey, PositionConfig> = {
+  past: {
+    icon: "fas fa-history",
+    color: "text-purple-300",
+    translationKey: "positions.past",
+  },
+  present: {
+    icon: "fas fa-clock",
+    color: "text-yellow-300",
+    translationKey: "positions.present",
+  },
+  future: {
+    icon: "fas fa-crystal-ball",
+    color: "text-blue-300",
+    translationKey: "positions.future",
+  },
+};
 
 interface TarotCardProps {
   card: TarotCard;
-  position: string;
+  position: PositionKey;
   index: number;
   onClick: () => void;
 }
-
-const getPositionIcon = (position: string) => {
-  if (position.includes("과거") || position.includes("Past"))
-    return "fas fa-history";
-  if (position.includes("현재") || position.includes("Present"))
-    return "fas fa-clock";
-  if (position.includes("미래") || position.includes("Future"))
-    return "fas fa-crystal-ball";
-  return "fas fa-clock";
-};
-
-const getPositionColor = (position: string) => {
-  if (position.includes("과거") || position.includes("Past"))
-    return "text-purple-300";
-  if (position.includes("현재") || position.includes("Present"))
-    return "text-yellow-300";
-  if (position.includes("미래") || position.includes("Future"))
-    return "text-blue-300";
-  return "text-yellow-300";
-};
 
 export default function TarotCard({
   card,
@@ -37,10 +45,13 @@ export default function TarotCard({
 }: TarotCardProps) {
   const { t, i18n } = useTranslation();
 
-  // 현재 언어에 따라 카드 이름 결정
-  const getCardName = () => {
-    return i18n.language === "en" ? card.englishName : card.name;
-  };
+  // 현재 언어에 따라 카드 데이터 가져오기
+  const localizedCard =
+    getLocalizedCard(card.id, i18n.language as Language) || card;
+
+  // position 설정 가져오기
+  const positionConfig = POSITION_CONFIG[position];
+  const translatedPosition = t(positionConfig.translationKey);
 
   return (
     <motion.div
@@ -52,21 +63,19 @@ export default function TarotCard({
       <div className="bg-gradient-to-br from-purple-900/60 to-indigo-900/60 backdrop-blur-lg rounded-2xl p-6 border border-purple-600/30 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:border-purple-400/50">
         <div className="text-center mb-4">
           <i
-            className={`${getPositionIcon(
-              position
-            )} text-2xl ${getPositionColor(position)} mb-2`}></i>
+            className={`${positionConfig.icon} text-2xl ${positionConfig.color} mb-2`}></i>
           <h4 className="font-serif text-lg font-semibold text-purple-200">
-            {position}
+            {translatedPosition}
           </h4>
         </div>
 
         <div className="relative bg-gradient-to-br from-purple-700 to-purple-800 rounded-xl p-4 mb-4 border border-purple-500/30 min-h-[240px] flex items-center justify-center overflow-hidden">
-          {card.imageUrl ? (
+          {localizedCard.imageUrl ? (
             /* Card Image */
             <div className="relative z-10 w-full h-full flex items-center justify-center">
               <img
-                src={card.imageUrl}
-                alt={card.name}
+                src={localizedCard.imageUrl}
+                alt={localizedCard.name}
                 className="max-w-full max-h-full object-contain rounded-lg"
                 style={{
                   filter: "drop-shadow(0 0 10px rgba(139, 92, 246, 0.5))",
@@ -112,14 +121,10 @@ export default function TarotCard({
 
         <div className="text-center">
           <h5 className="font-serif text-xl font-bold text-purple-200 mb-2">
-            {getCardName()}
+            {localizedCard.name}
           </h5>
-          {/* 부제목으로 다른 언어 이름 표시 */}
-          <p className="text-purple-300 text-sm mb-3">
-            {i18n.language === "en" ? card.name : card.englishName}
-          </p>
           <div className="flex flex-wrap gap-1 justify-center mb-4">
-            {card.keywords.slice(0, 3).map((keyword, i) => (
+            {localizedCard.keywords.slice(0, 3).map((keyword, i) => (
               <span
                 key={i}
                 className="bg-purple-600/50 text-purple-100 px-2 py-1 rounded-full text-xs">

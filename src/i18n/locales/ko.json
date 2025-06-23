@@ -30,6 +30,7 @@
   "reading": {
     "title": "타로 해석",
     "overallTitle": "종합 운세",
+    "drawAgain": "다시 뽑기",
     "pastCardMeaning": "과거의 {cardName}이 당신에게 속삭입니다. {keywords}의 경험이 당신의 영혼 깊숙이 뿌리내렸습니다.",
     "presentCardMeaning": "현재의 {cardName}이 당신의 현재 상황을 비춰주고 있습니다. 지금 당신은 {keywords}의 강력한 에너지 속에 있습니다.",
     "futureCardMeaning": "미래의 {cardName}이 당신에게 약속하고 있습니다. {keywords}의 에너지가 당신의 앞날을 밝게 비출 것입니다."

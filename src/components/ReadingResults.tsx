@@ -1,59 +1,52 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import type { TarotCard } from "@shared/schema";
+import { POSITION_CONFIG, type PositionKey } from "./TarotCard";
+import { getLocalizedCard, type Language } from "@/data";
 
 interface ReadingResultsProps {
   cards: TarotCard[];
   onDrawAgain: () => void;
 }
 
-const positionIcons = ["fas fa-history", "fas fa-clock", "fas fa-crystal-ball"];
-const positionColors = ["text-purple-300", "text-yellow-300", "text-blue-300"];
-
 export default function ReadingResults({
   cards,
   onDrawAgain,
 }: ReadingResultsProps) {
   const { t, i18n } = useTranslation();
-  const positions = [
-    t("positions.past"),
-    t("positions.present"),
-    t("positions.future"),
-  ];
 
-  // 현재 언어에 따라 카드 이름 결정
-  const getCardName = (card: TarotCard) => {
-    return i18n.language === "en" ? card.englishName : card.name;
+  const positionKeys: PositionKey[] = ["past", "present", "future"];
+
+  // 언어별 카드 데이터를 가져오는 함수
+  const getLocalizedCardName = (card: TarotCard) => {
+    const localizedCard = getLocalizedCard(card.id, i18n.language as Language);
+    return localizedCard?.name || card.name;
   };
 
-  const generatePositionMeaning = (card: TarotCard, position: string) => {
+  // 언어별 카드 정보를 가져오는 함수
+  const getLocalizedCardInfo = (card: TarotCard) => {
+    return getLocalizedCard(card.id, i18n.language as Language) || card;
+  };
+
+  const generatePositionMeaning = (
+    card: TarotCard,
+    positionKey: PositionKey
+  ) => {
+    const localizedCard = getLocalizedCardInfo(card);
+    const cardName = localizedCard.name;
+
     // 한국어일 때만 기존의 복잡한 메시지 사용
     if (i18n.language === "ko") {
-      const getEmotionalPastReading = (card: TarotCard) => {
-        const emotionalIntros = [
-          "당신의 마음 깊숙한 곳에서 울려퍼지는 과거의 메아리...",
-          "시간의 강물을 거슬러 올라가면 보이는 당신의 진실...",
-          "지나간 날들이 남긴 상처와 축복의 흔적들...",
-          "당신이 걸어온 길 위에 새겨진 소중한 발자국들...",
-        ];
-
-        const intro =
-          emotionalIntros[Math.floor(Math.random() * emotionalIntros.length)];
-
-        if (card.name === "바보") {
-          return `${intro} 과거의 바보 카드가 말하고 있습니다. 당신은 한때 순수한 영혼으로 새로운 세상을 향해 첫 발을 내딛었습니다. 그때의 용기와 무모함이 지금의 당신을 만들었습니다. 실수도 많았지만, 그 모든 경험이 당신만의 독특한 지혜가 되었습니다.`;
-        } else if (card.name === "마법사") {
-          return `${intro} 과거의 마법사가 당신의 잠재력을 일깨워줍니다. 당신은 언제나 무언가를 창조하고 변화시킬 수 있는 힘을 가지고 있었습니다. 과거의 성취들이 지금도 당신의 자신감의 원천이 되고 있습니다.`;
-        } else {
-          return `${intro} 과거의 ${getCardName(
-            card
-          )}이 당신에게 속삭입니다. ${card.keywords
-            .slice(0, 2)
-            .join(
-              "과 "
-            )}의 경험이 당신의 영혼 깊숙이 뿌리내렸습니다. 그때의 아픔도, 기쁨도 모두 지금의 당신을 이루는 소중한 조각들입니다. 과거를 원망하지 마세요. 그것은 당신이 지금 여기에 있게 한 신성한 여정이었습니다.`;
-        }
-      };
+      const getEmotionalPastReading = (card: TarotCard) =>
+        `과거의 ${cardName}이 당신에게 보내는 깊은 메시지입니다. 지나간 시간 속에서 ${localizedCard.keywords
+          .slice(0, 2)
+          .join(", ")}의 경험이 당신의 영혼 깊숙이 뿌리내렸습니다.
+        
+        ${
+          localizedCard.advice
+        } 이것은 당신이 지금까지 걸어온 길에 대한 우주의 인정입니다. 과거의 아픔도, 기쁨도 모두 당신을 지금의 당신으로 만든 소중한 경험들입니다.
+        
+        과거를 원망하지 마세요. 그 모든 경험이 당신에게 지혜와 힘을 주었습니다. 당신의 과거는 당신의 약점이 아니라 가장 큰 자산입니다. 그 경험들을 통해 당신은 더욱 강하고 아름다운 사람이 되었습니다.`;
 
       const getEmotionalPresentReading = (card: TarotCard) => {
         const emotionalPresentIntros = [
@@ -68,14 +61,12 @@ export default function ReadingResults({
             Math.floor(Math.random() * emotionalPresentIntros.length)
           ];
 
-        return `${intro} 현재의 ${getCardName(
-          card
-        )}이 당신의 현재 상황을 비춰주고 있습니다. 지금 당신은 ${card.keywords
+        return `${intro} 현재의 ${cardName}이 당신의 현재 상황을 비춰주고 있습니다. 지금 당신은 ${localizedCard.keywords
           .slice(0, 3)
           .join(", ")}의 강력한 에너지 속에 있습니다. 
         
         ${
-          card.advice
+          localizedCard.advice
         } 이것은 단순한 조언이 아닙니다. 우주가 당신에게 건네는 사랑의 메시지입니다. 당신의 마음이 이미 알고 있는 진실을 다시 한번 확인해주는 것입니다. 
         
         지금 이 순간을 소중히 여기세요. 당신이 느끼고 있는 모든 감정, 모든 생각이 의미가 있습니다. 현재의 어려움도, 기쁨도 모두 당신을 더 완전한 존재로 만들어가는 과정입니다.`;
@@ -94,48 +85,38 @@ export default function ReadingResults({
             Math.floor(Math.random() * emotionalFutureIntros.length)
           ];
 
-        return `${intro} 미래의 ${getCardName(
-          card
-        )}이 당신에게 약속하고 있습니다. ${card.keywords
+        return `${intro} 미래의 ${cardName}이 당신에게 약속하고 있습니다. ${localizedCard.keywords
           .slice(0, 3)
           .join(", ")}의 에너지가 당신의 앞날을 밝게 비출 것입니다.
         
         두려워하지 마세요. 당신이 지금까지 쌓아온 모든 경험과 지혜가 미래의 당신을 든든히 뒷받침할 것입니다. 설령 어려움이 있다 하더라도, 그것마저도 당신을 더욱 강하고 아름다운 존재로 만들어줄 것입니다.
         
-        미래는 당신의 손 안에 있습니다. ${getCardName(
-          card
-        )}의 에너지를 받아들이고, 당신만의 특별한 길을 걸어가세요. 우주는 당신을 응원하고 있습니다.`;
+        미래는 당신의 손 안에 있습니다. ${cardName}의 에너지를 받아들이고, 당신만의 특별한 길을 걸어가세요. 우주는 당신을 응원하고 있습니다.`;
       };
 
       const meanings = {
-        과거: getEmotionalPastReading(card),
-        현재: getEmotionalPresentReading(card),
-        미래: getEmotionalFutureReading(card),
+        past: getEmotionalPastReading(card),
+        present: getEmotionalPresentReading(card),
+        future: getEmotionalFutureReading(card),
       };
 
       return (
-        meanings[position as keyof typeof meanings] ||
-        `${getCardName(card)} 카드가 ${position}에 신비롭게 나타났습니다.`
+        meanings[positionKey] || `${cardName} 카드가 신비롭게 나타났습니다.`
       );
-    } else {
-      // 영어일 때는 직접 문자열 생성 (i18n 변수 치환 문제 해결)
-      if (position.includes("Past")) {
-        const cardName = getCardName(card);
-        const keywords = card.keywords.slice(0, 2).join(" and ");
-        return `The ${cardName} from your past whispers to you. The experience of ${keywords} has taken root deep in your soul.`;
-      } else if (position.includes("Present")) {
-        const cardName = getCardName(card);
-        const keywords = card.keywords.slice(0, 3).join(", ");
-        return `The current ${cardName} reflects your present situation. You are now in the powerful energy of ${keywords}.`;
-      } else if (position.includes("Future")) {
-        const cardName = getCardName(card);
-        const keywords = card.keywords.slice(0, 3).join(", ");
-        return `The future ${cardName} promises you. The energy of ${keywords} will brightly illuminate your future.`;
-      }
-      return `The ${getCardName(
-        card
-      )} card appears mysteriously in your ${position}.`;
     }
+
+    // 영어일 때는 직접 문자열 생성
+    if (positionKey === "past") {
+      const keywords = localizedCard.keywords.slice(0, 2).join(" and ");
+      return `The ${cardName} from your past whispers to you. The experience of ${keywords} has taken root deep in your soul.`;
+    } else if (positionKey === "present") {
+      const keywords = localizedCard.keywords.slice(0, 3).join(", ");
+      return `The current ${cardName} reflects your present situation. You are now in the powerful energy of ${keywords}.`;
+    } else if (positionKey === "future") {
+      const keywords = localizedCard.keywords.slice(0, 3).join(", ");
+      return `The future ${cardName} promises you. The energy of ${keywords} will brightly illuminate your future.`;
+    }
+    return `The ${cardName} card appears mysteriously.`;
   };
 
   const generateOverallReading = (cards: TarotCard[]) => {
@@ -160,9 +141,11 @@ export default function ReadingResults({
         ", "
       )}의 강력한 에너지들이 하나의 완벽한 조화를 이루고 있습니다.
 
-과거의 ${getCardName(pastCard)}에서 시작된 여정이 현재의 ${getCardName(
+과거의 ${getLocalizedCardName(
+        pastCard
+      )}에서 시작된 여정이 현재의 ${getLocalizedCardName(
         presentCard
-      )}으로 흘러와, 미래의 ${getCardName(
+      )}으로 흘러와, 미래의 ${getLocalizedCardName(
         futureCard
       )}로 완성되는 이 서사는 마치 우주가 당신을 위해 특별히 써내려간 시와 같습니다.
 
@@ -178,11 +161,11 @@ The three cards drawn for you tell a beautiful story. The powerful energies of $
         ", "
       )} create a perfect harmony in your life.
 
-Your journey from the ${getCardName(
+Your journey from the ${getLocalizedCardName(
         pastCard
-      )} in the past, flowing through the present ${getCardName(
+      )} in the past, flowing through the present ${getLocalizedCardName(
         presentCard
-      )}, and completing with the future ${getCardName(
+      )}, and completing with the future ${getLocalizedCardName(
         futureCard
       )} is like a poem specially written by the universe for you.
 
@@ -206,37 +189,42 @@ You were born to be loved. You are precious enough and beautiful enough. 💜`;
       </h3>
 
       <div className="space-y-8">
-        {positions.map((position, index) => {
+        {positionKeys.map((positionKey, index) => {
           const card = cards[index];
+          const positionConfig = POSITION_CONFIG[positionKey];
+          const translatedPosition = t(positionConfig.translationKey);
+
           return (
             <motion.div
-              key={position}
+              key={positionKey}
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.3, duration: 0.6 }}
               className="border-l-4 border-purple-400 pl-6 py-4">
               <div className="flex items-center mb-3">
                 <i
-                  className={`${positionIcons[index]} ${positionColors[index]} text-xl mr-3`}></i>
+                  className={`${positionConfig.icon} ${positionConfig.color} text-xl mr-3`}></i>
                 <h4 className="font-serif text-xl font-bold text-purple-200">
-                  {position}: {getCardName(card)}
+                  {translatedPosition}: {getLocalizedCardName(card)}
                 </h4>
               </div>
               <p className="text-purple-100 leading-relaxed mb-3">
-                {generatePositionMeaning(card, position)}
+                {generatePositionMeaning(card, positionKey)}
               </p>
               <div className="bg-purple-800/40 rounded-lg p-4">
                 <h5 className="font-semibold text-purple-300 mb-2">
                   {t("card.keywords")}
                 </h5>
                 <div className="flex flex-wrap gap-2">
-                  {card.keywords.slice(0, 4).map((keyword, i) => (
-                    <span
-                      key={i}
-                      className="bg-purple-600/30 text-purple-200 px-3 py-1 rounded-full text-sm">
-                      {keyword}
-                    </span>
-                  ))}
+                  {getLocalizedCardInfo(card)
+                    .keywords.slice(0, 4)
+                    .map((keyword, i) => (
+                      <span
+                        key={i}
+                        className="bg-purple-600/30 text-purple-200 px-3 py-1 rounded-full text-sm">
+                        {keyword}
+                      </span>
+                    ))}
                 </div>
               </div>
             </motion.div>
@@ -260,14 +248,16 @@ You were born to be loved. You are precious enough and beautiful enough. 💜`;
         </motion.div>
       </div>
 
-      {/* Action Buttons */}
+      {/* Draw Again Button */}
       <div className="text-center mt-12">
-        <button
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
           onClick={onDrawAgain}
-          className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg border border-purple-400/50">
-          <i className="fas fa-redo mr-2"></i>
-          {t("home.drawAgain")}
-        </button>
+          className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-500 hover:to-purple-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition-all duration-300 shadow-lg border border-purple-400/50">
+          <i className="fas fa-redo mr-3"></i>
+          {t("reading.drawAgain")}
+        </motion.button>
       </div>
     </motion.div>
   );
